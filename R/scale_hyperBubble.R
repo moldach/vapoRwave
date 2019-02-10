@@ -9,25 +9,29 @@ hyperBubble_palette <- c(
 
 )
 
-#' Hyperbubble Color and Fill Scales
+#' hyperBubble_pal
 #'
-#' Based on the song Mom Dad Unit by Hyperbubble because I thought the guy looks like John C. Reilly; .
+#' @export
+hyperBubble_pal <- function(){
+        scales::manual_pal(hyperBubble_palette)
+}
+
+#' scale_colour_hyperBubble
 #'
-#' @references https://www.youtube.com/watch?v=YVUnf-sNAcc
-#' @seealso [ggplot2::scale_colour_discrete] [ggplot2::scale_fill_discrete]
-#' @inheritDotParams ggplot2::discrete_scale
-#' @name scale_hyperBubble
-NULL
-hyperBubble_pal <- function() scales::manual_pal(hyperBubble_palette)
-
-#' @rdname scale_hyperBubble
+#' @param ... pass me the palette
+#'
 #' @export
-scale_colour_hyperBubble <- function(...) ggplot2::discrete_scale("colour", "hyperBubble", hyperBubble_pal(), ...)
+scale_colour_hyperBubble <- function(...){
+        ggplot2::discrete_scale("colour", "hyperBubble", hyperBubble_pal(), ...)
+}
 
-#' @rdname scale_hyperBubble
-#' @export
 scale_color_hyperBubble <- scale_colour_hyperBubble
 
-#' @rdname scale_hyperBubble
+#' scale_fill_hyperBubble
+#'
+#' @param ... pass me the palette
+#'
 #' @export
-scale_fill_hyperBubble <- function(...) ggplot2::discrete_scale('fill', 'hyperBubble', hyperBubble_pal(), ...)
+scale_fill_hyperBubble <- function(...){
+        ggplot2::discrete_scale('fill', 'hyperBubble', hyperBubble_pal(), ...)
+}

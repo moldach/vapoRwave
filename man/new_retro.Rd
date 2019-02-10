@@ -8,10 +8,10 @@ new_retro(font = "SF Alien Encounters", text.color = "#FA5F70FF",
   base.size = 15, plot.background.color = "#0F0D1A",
   legend.position = "right", panel.border.color = "#494D72",
   panel.background = "#0F0D1A", panel.grid.color = "#FFB967",
-  panel.grid.linetype = "dashed", axis.text.color = "#FA5F70FF",
-  axis.text.size = base.size * 0.6666667, subtitle.size = base.size *
-  0.8, legend.text = base.size * 0.8, legend.title = base.size * 0.93,
-  axis.title.size = base.size * 0.8, title.size = 15)
+  axis.text.color = "#FA5F70FF", axis.text.size = base.size *
+  0.6666667, subtitle.size = base.size * 0.8, legend.text = base.size *
+  0.8, legend.title = base.size * 0.93, axis.title.size = base.size *
+  0.8, title.size = 15)
 }
 \arguments{
 \item{font}{Base text family}
