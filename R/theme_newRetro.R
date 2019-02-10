@@ -1,3 +1,28 @@
+#' Floral Shoppe Theme
+#'
+#' [ggplot2] plot theme based on the New Retro labels A E S T H E T I C
+#'
+#'
+#' @references https://newretrowave.com/
+#' @seealso [ggplot2::theme]
+#'
+#' @param font Base text family
+#' @param text.color Color of text
+#' @param base.size Base text size
+#' @param plot.background.color Color of plot background, passed to `plot.background`
+#' @param legend.position Position of legend
+#' @param panel.border.color Color of plot panel border
+#' @param panel.background Background panel color
+#' @param panel.grid.color Color of the panel grid
+#' @param axis.text.color Color of axis text
+#' @param axis.text.size Size of axis text
+#' @param subtitle.size Size of subtitle
+#' @param legend.text Size of legend
+#' @param legend.title Size of legend title
+#' @param axis.title.size Size of axis title
+#' @param title.size Size of title
+#'
+#' @export
 new_retro <- function(
         font = "SF Alien Encounters",
         text.color = "#FA5F70FF",
@@ -85,4 +110,33 @@ new_retro <- function(
                 strip.text= ggplot2::element_text(size  = 12,  hjust = 0)
 
         )
+}
+
+#' Check for font
+#'
+#' @param font_name
+#'
+#' @return
+#' @export
+#'
+#' @examples
+check_font <- function(font_name) {
+        if (!requireNamespace("extrafont", quietly = TRUE)) {
+                warning("The font \"", font_name, "\" may or may not be installed on your system.",
+                        "Please install the package `extrafont` if you'd like me to be able to check for you.",
+                        call. = FALSE)
+        } else {
+                if (!font_name %in% extrafont::fonts()) {
+                        if (font_name %in% font_urls$name) {
+                                warning("Font '", font_name, "' isn't in the extrafont font list (but it may still work). ",
+                                        "If recently installed, you can try running `extrafont::font_import()`. ",
+                                        "To install, visit: ", font_urls[font_urls$name == font_name, "url"],
+                                        call. = FALSE)
+                        } else {
+                                warning("Font '", font_name, "' isn't in the extrafont font list (but it may still work). ",
+                                        "If recently installed, you can try running `extrafont::font_import()`. ",
+                                        call. = FALSE)
+                        }
+                }
+        }
 }
