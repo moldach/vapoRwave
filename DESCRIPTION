@@ -13,3 +13,4 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/moldach/vapoRwave
 BugReports: https://github.com/moldach/vapoRwave/issues
+RoxygenNote: 6.1.1
