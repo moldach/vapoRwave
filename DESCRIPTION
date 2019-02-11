@@ -1,13 +1,12 @@
 Package: vapoRwave
-Title: What the Package Does (One Line, Title Case)
+Title: Vaporwave themes and color palettes for ggplot2 graphics
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Matthew",
+           family = "Oldach",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "moldach686@gmail.com")
+Description: Giving a bit of 80's flair to ggplot2
 Imports:
         ggplot2,
         scales
