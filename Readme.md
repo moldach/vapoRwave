@@ -61,6 +61,12 @@ The colors for this theme were drawn from many vaporwave images; I selected thos
 
 <img src="Readme_files/figure-gfm/hyperBubble_palette.png" />
 
+### dantaki/vapeplot
+
+There was a `matplotlib` extension for python with a couple of vaporwave palettes I incorportaed as well
+
+<img src="Readme_files/figure-gfm/vapeplot.png" />
+
 Demos
 -----
 
@@ -188,7 +194,7 @@ ggplot(df, aes(x = x, y = y, fill = category)) +
     scale_y_continuous(expand = c(0, 0), trans = 'reverse') +
     scale_fill_newRetro() +
     labs(title="Waffle Chart", subtitle="'Class' of vehicles",
-         caption="Source: mpg") + new_retro(font = "SF Alien Encounters Solid", text.color = "pink")
+         caption="Source: mpg") + new_retro(font = "SF Alien Encounters Solid", main.text.color = "pink")
 ```
 
 ![](Readme_files/figure-markdown_github/newRetro_02-1.png)
@@ -230,7 +236,7 @@ ggplot(df, aes(x = year, y = gdpPercap, fill = country)) +
        x = NULL,
        y = "GDP per capita ($)",
        fill = NULL) +
-  floral_shoppe(text.color = "black", font = "OCR A Extended", legend.position = "bottom") +
+  floral_shoppe(main.text.color = "black", font = "OCR A Extended", legend.position = "bottom") +
   scale_fill_newRetro()
 ```
 
@@ -263,8 +269,6 @@ ggcorrplot(corr, hc.order = T,
 ```
 
 ![](Readme_files/figure-markdown_github/floralShoppe_02-1.png)
-
-### scatterplot mattrice
 
 ``` r
 library(WVPlots) 
