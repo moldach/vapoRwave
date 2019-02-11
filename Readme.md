@@ -25,7 +25,10 @@ On the musical side it's known for it's appropriation of 1980's and 1990's eleva
 
 On the visual side it's know for A E S T H E T I C S with fullwidth characters it's satrical takes on consumer capitalism (*.e.g* the use wih Greco-Roman statues to signify the fall of capitalism), and other nostalgic or surrealist engagement with glitch art, anime, 3D-rendered objects and cyberpunk trope in it's cover art and music videos.
 
-<img src="Readme_files/figure-gfm/digital_aes.jpg" /> <img src="Readme_files/figure-gfm/CLKW.gif" /> <img src="Readme_files/figure-gfm/snapshot.jpg" /> \#\# Setup theme and scales
+<img src="Readme_files/figure-gfm/digital_aes.jpg" /> <img src="Readme_files/figure-gfm/ClKW.gif" /> <img src="Readme_files/figure-gfm/snapshot.jpg" />
+
+Setup theme and scales
+----------------------
 
 There are three theme-generating functions:
 
@@ -101,7 +104,7 @@ ggplot(midwest, aes(x=area, y=poptotal)) +
        y="Population", 
        x="Area", 
        title="New Retro Theme", 
-       caption = "Source: midwest") + new_retro()
+       caption = "Source: midwest") + new_retro() + scale_colour_newRetro()
 #> Warning: Removed 15 rows containing non-finite values (stat_smooth).
 #> Warning: Removed 15 rows containing missing values (geom_point).
 ```
