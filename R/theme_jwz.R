@@ -106,7 +106,7 @@ jwz <- function(
                 plot.caption = ggplot2::element_text(color=main.text.color),
                 #Strip background (#This sets the panel background for facet-wrapped plots to white, removing the standard grey ggplot background colour and sets the title size of the facet-wrap title to font size 22)
                 strip.background = ggplot2::element_rect(fill=panel.background),
-                strip.text= ggplot2::element_text(colour = main.text.color,
+                strip.text= ggplot2::element_text(color = main.text.color,
                                                   size  = 12,
                                                   hjust = 0)
 
