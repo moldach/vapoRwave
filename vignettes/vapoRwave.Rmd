@@ -26,7 +26,8 @@ library(tidyverse)
 [Github]: https://github.com/moldach 
 [Personal Website]: https://moldach.github.io/ 
 
-![](~/vapoRwave/Readme_files/figure-gfm/cicero.png)
+<img src="Readme_files/figure-gfm/cicero.png" />
+
 This package provides a number of `ggplot2` themes inspired by [vaporwave](https://en.wikipedia.org/wiki/Vaporwave), both a subgenre of electronic music and an art movement.
 
 On the musical side it's known for it's appropriation of 1980's and 1990's elevator/lounge music along with the application of slowed-down chopped and screwed techniques, looping and other effects.
