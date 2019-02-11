@@ -28,15 +28,19 @@ library(tidyverse)
 
 <img src="Readme_files/figure-gfm/cicero.png" />
 
-This package provides a number of `ggplot2` themes inspired by [vaporwave](https://en.wikipedia.org/wiki/Vaporwave), both a subgenre of electronic music and an art movement.
+This package provides a number of `ggplot2` themes inspired by [vaporwave](https://en.wikipedia.org/wiki/Vaporwave), both a subgenre of electronic music and an art movement. Here's a nice sampling here: [link](http://rozap.github.io/vaporwave/).
 
 On the musical side it's known for it's appropriation of 1980's and 1990's elevator/lounge music along with the application of slowed-down chopped and screwed techniques, looping and other effects.
 
 On the visual side it's know for A E S T H E T I C S with fullwidth characters it's satrical takes on consumer capitalism (*.e.g* the use wih Greco-Roman statues to signify the fall of capitalism), and other nostalgic or surrealist engagement with glitch art, anime, 3D-rendered objects and cyberpunk trope in it's cover art and music videos.
 
+> Aesthetic, often stylized as a e s t h e t i c, refers to retro-inspired visual art and music associated with the vaporwave subculture, which typically include Japanese lettering and nostalgic themes from 1980s and 1990s computer operating systems and video game consoles. Additionally, the term is widely associated with the 2012 vaporwave song “リサフランク420 / 現代のコンピュー” by Macintosh Plus...
+
+<img src="Readme_files/figure-gfm/vaporwave.gif" />
 <img src="Readme_files/figure-gfm/digital_aes.jpg" />
 <img src="Readme_files/figure-gfm/ClKW.gif" />
 <img src="Readme_files/figure-gfm/snapshot.jpg" /> 
+<img src="Readme_files/figure-gfm/outrun.gif" />
 
 ## Setup theme and scales
 
