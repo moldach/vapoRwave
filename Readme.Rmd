@@ -1,0 +1,23 @@
+---
+title: "VapoRwave Themes"
+author: "Matthew J. Oldach"
+output: github_document
+editor_options: 
+        chunk_output_type: console
+---
+
+
+## Installation
+
+This package isn't on CRAN, so you'll need to use the devtools package to install it.
+
+```r
+# If you don't have devtools installed
+install.packages("devtools")
+devtools::install_github("moldach/vapoRwave")
+```
+
+## Introduction
+
+```{r readme, child = "vignettes/vapoRwave.Rmd", out.dir="Readme_files/figure-gfm/"}
+```
