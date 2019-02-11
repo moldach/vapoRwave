@@ -25,10 +25,7 @@ On the musical side it's known for it's appropriation of 1980's and 1990's eleva
 
 On the visual side it's know for A E S T H E T I C S with fullwidth characters it's satrical takes on consumer capitalism (*.e.g* the use wih Greco-Roman statues to signify the fall of capitalism), and other nostalgic or surrealist engagement with glitch art, anime, 3D-rendered objects and cyberpunk trope in it's cover art and music videos.
 
-<img src="C:/Users/Matthew/Documents/vapoRwave/Readme_files/figure-gfm/digital_aes.jpg" width="1199" /> ![](C:/Users/Matthew/Documents/vapoRwave/Readme_files/figure-gfm/ClKW.gif) <img src="C:/Users/Matthew/Documents/vapoRwave/Readme_files/figure-gfm/snapshot.jpg" width="1280" />
-
-Setup theme and scales
-----------------------
+<img src="Readme_files/figure-gfm/digital_aes.jpg" /> <img src="Readme_files/figure-gfm/CLKW.gif" /> <img src="Readme_files/figure-gfm/snapshot.jpg" /> \#\# Setup theme and scales
 
 There are three theme-generating functions:
 
@@ -43,23 +40,23 @@ The colors for this theme were drawn from many vaporwave images; I selected thos
 
 ### Floral Shoppe Palette
 
-<img src="C:/Users/Matthew/Documents/vapoRwave/Readme_files/figure-gfm/floralShoppe_palette.png" width="579" />
+<img src="Readme_files/figure-gfm/floralShoppe_palette.png" />
 
 ### New Retro Palette
 
-<img src="C:/Users/Matthew/Documents/vapoRwave/Readme_files/figure-gfm/newRetro_palette.png" width="579" />
+<img src="Readme_files/figure-gfm/newRetro_palette.png" />
 
 ### jwz Palette
 
-<img src="C:/Users/Matthew/Documents/vapoRwave/Readme_files/figure-gfm/jwz_palette.png" width="579" />
+<img src="Readme_files/figure-gfm/jwz_palette.png" />
 
 ### Hotline Bling Palette
 
-<img src="C:/Users/Matthew/Documents/vapoRwave/Readme_files/figure-gfm/hotlineBling_palette.png" width="579" />
+<img src="Readme_files/figure-gfm/hotlineBling_palette.png" />
 
 ### Hyper Bubble Palette
 
-<img src="C:/Users/Matthew/Documents/vapoRwave/Readme_files/figure-gfm/hyperBubble_palette.png" width="579" />
+<img src="Readme_files/figure-gfm/hyperBubble_palette.png" />
 
 Demos
 -----
@@ -73,7 +70,7 @@ library(extrafont)
 
 ### Floral Shoppe
 
-<img src="C:/Users/Matthew/Documents/vapoRwave/Readme_files/figure-gfm/FloralShoppe.png" width="316" />
+<img src="Readme_files/figure-gfm/FloralShoppe.png" />
 
 ``` r
 # use palette_03
@@ -86,11 +83,11 @@ ggplot(mpg, aes(displ)) +
         subtitle="Engine Displacement across Vehicle Classes") + floral_shoppe() + scale_fill_floralShoppe()
 ```
 
-![](Readme_files/figure-markdown_github/floralShoppe_01-2.png)
+![](Readme_files/figure-markdown_github/floralShoppe_01-1.png)
 
 ### New retro
 
-<img src="C:/Users/Matthew/Documents/vapoRwave/Readme_files/figure-gfm/new_retro.jpg" width="1884" />
+<img src="Readme_files/figure-gfm/new_retro.jpg" />
 
 ``` r
 options(scipen=999)  # turn-off scientific notation like 1e+48
@@ -109,11 +106,11 @@ ggplot(midwest, aes(x=area, y=poptotal)) +
 #> Warning: Removed 15 rows containing missing values (geom_point).
 ```
 
-![](Readme_files/figure-markdown_github/newRetro_01-2.png)
+![](Readme_files/figure-markdown_github/newRetro_01-1.png)
 
 ### JWZ Style
 
-<img src="C:/Users/Matthew/Documents/vapoRwave/Readme_files/figure-gfm/jwz.jpg" width="1012" />
+<img src="Readme_files/figure-gfm/jwz.jpg" />
 
 ``` r
 library(ggthemes)
@@ -127,7 +124,7 @@ ggplot(mpg, aes(class, cty)) +
              y="City Mileage") + jwz()
 ```
 
-![](Readme_files/figure-markdown_github/jwz_01-2.png)
+![](Readme_files/figure-markdown_github/jwz_01-1.png)
 
 Fonts
 -----
