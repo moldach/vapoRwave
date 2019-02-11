@@ -104,7 +104,9 @@ ggplot(midwest, aes(x=area, y=poptotal)) +
        y="Population", 
        x="Area", 
        title="New Retro Theme", 
-       caption = "Source: midwest") + new_retro() + scale_colour_newRetro()
+       caption = "Source: midwest") + 
+        new_retro() + 
+        scale_colour_newRetro()
 #> Warning: Removed 15 rows containing non-finite values (stat_smooth).
 #> Warning: Removed 15 rows containing missing values (geom_point).
 ```
@@ -124,7 +126,9 @@ ggplot(mpg, aes(class, cty)) +
              subtitle="City Mileage grouped by Class of vehicle",
              caption="Source: mpg",
              x="Class of Vehicle",
-             y="City Mileage") + jwz()
+             y="City Mileage") + 
+        jwz() +
+        scale_fill_jwz()
 ```
 
 ![](Readme_files/figure-markdown_github/jwz_01-1.png)
@@ -201,7 +205,7 @@ ggplot(filter(gapminder, year == 2007), aes(x = gdpPercap, y = lifeExp)) +
          x = "GDP per capita ($)",
          y = "Age (years)") +
     guides(size = FALSE) +
-    jwz(font = "Streamster", text.color = "#c3fe1b", subtitle.size = 16) + scale_fill_hyperBubble()
+    jwz(font = "Streamster", main.text.color = "#FFCCFF", sub.text.color = "#CCFFFF", subtitle.size = 16) + scale_fill_hyperBubble()
 ```
 
 ![](Readme_files/figure-markdown_github/jwz_02-1.png)
@@ -259,6 +263,24 @@ ggcorrplot(corr, hc.order = T,
 ```
 
 ![](Readme_files/figure-markdown_github/floralShoppe_02-1.png)
+
+### scatterplot mattrice
+
+``` r
+library(WVPlots) 
+
+PairPlot(iris, 
+         colnames(iris)[1:4], 
+         "Anderson's Iris Data -- 3 species", 
+         group_var = "Species") +
+        labs(caption = "Source: https://bit.ly/2N7tudH") + 
+                jwz() + 
+                scale_colour_hotlineBling()
+#> Scale for 'colour' is already present. Adding another scale for
+#> 'colour', which will replace the existing scale.
+```
+
+![](Readme_files/figure-markdown_github/unnamed-chunk-3-1.png)
 
 If you need to use a color gradient take a look at the html color codes for the palette in the `Readme_files` folder and insert your choice in `low` and `high`.
 

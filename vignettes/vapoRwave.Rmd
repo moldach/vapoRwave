@@ -199,7 +199,7 @@ ggplot(filter(gapminder, year == 2007), aes(x = gdpPercap, y = lifeExp)) +
          x = "GDP per capita ($)",
          y = "Age (years)") +
     guides(size = FALSE) +
-    jwz(font = "Streamster", text.color = "#c3fe1b", subtitle.size = 16) + scale_fill_hyperBubble()
+    jwz(font = "Streamster", main.text.color = "#FFCCFF", sub.text.color = "#CCFFFF", subtitle.size = 16) + scale_fill_hyperBubble()
 ```
 
 ## Changing parameters
