@@ -16,6 +16,10 @@ jwz(font = "Windows Command Prompt", main.text.color = "#02BAFF",
 \arguments{
 \item{font}{Base text family}
 
+\item{main.text.color}{Color of main text}
+
+\item{sub.text.color}{Color of smaller text}
+
 \item{base.size}{Base text size}
 
 \item{plot.background.color}{Color of plot background, passed to `plot.background`}
@@ -41,8 +45,6 @@ jwz(font = "Windows Command Prompt", main.text.color = "#02BAFF",
 \item{axis.title.size}{Size of axis title}
 
 \item{title.size}{Size of title}
-
-\item{text.color}{Color of text}
 }
 \description{
 [ggplot2] plot theme based on the personal blog of Jamie Zawinski

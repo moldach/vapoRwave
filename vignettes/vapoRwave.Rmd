@@ -111,7 +111,9 @@ ggplot(midwest, aes(x=area, y=poptotal)) +
        y="Population", 
        x="Area", 
        title="New Retro Theme", 
-       caption = "Source: midwest") + new_retro() + scale_colour_newRetro()
+       caption = "Source: midwest") + 
+        new_retro() + 
+        scale_colour_newRetro()
 
 ```
 
@@ -128,7 +130,9 @@ ggplot(mpg, aes(class, cty)) +
              subtitle="City Mileage grouped by Class of vehicle",
              caption="Source: mpg",
              x="Class of Vehicle",
-             y="City Mileage") + jwz()
+             y="City Mileage") + 
+        jwz() +
+        scale_fill_jwz()
 ```
 
 ## Fonts
@@ -244,6 +248,21 @@ ggcorrplot(corr, hc.order = T,
            colors = c('#79ADDC', 'white', '#CC7E85'),
            lab = T) + floral_shoppe()
 ```
+
+### scatterplot mattrice
+
+```{r}
+library(WVPlots) 
+
+PairPlot(iris, 
+         colnames(iris)[1:4], 
+         "Anderson's Iris Data -- 3 species", 
+         group_var = "Species") +
+        labs(caption = "Source: https://bit.ly/2N7tudH") + 
+                jwz() + 
+                scale_colour_hotlineBling()
+```
+
 
 If you need to use a color gradient take a look at the html color codes for the palette in the `Readme_files` folder and insert your choice in `low` and `high`.
 

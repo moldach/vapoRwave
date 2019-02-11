@@ -6,7 +6,8 @@
 #' @seealso [ggplot2::theme]
 #'
 #' @param font Base text family
-#' @param text.color Color of text
+#' @param main.text.color Color of main text
+#' @param sub.text.color Color of smaller text
 #' @param base.size Base text size
 #' @param plot.background.color Color of plot background, passed to `plot.background`
 #' @param legend.position Position of legend
@@ -105,7 +106,9 @@ jwz <- function(
                 plot.caption = ggplot2::element_text(color=main.text.color),
                 #Strip background (#This sets the panel background for facet-wrapped plots to white, removing the standard grey ggplot background colour and sets the title size of the facet-wrap title to font size 22)
                 strip.background = ggplot2::element_rect(fill=panel.background),
-                strip.text= ggplot2::element_text(size  = 12,  hjust = 0)
+                strip.text= ggplot2::element_text(colour = main.text.color,
+                                                  size  = 12,
+                                                  hjust = 0)
 
         )
 }

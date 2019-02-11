@@ -1,4 +1,4 @@
-#' Floral Shoppe Theme
+#' New Retro Theme
 #'
 #' [ggplot2] plot theme based on the New Retro labels A E S T H E T I C
 #'
@@ -7,7 +7,8 @@
 #' @seealso [ggplot2::theme]
 #'
 #' @param font Base text family
-#' @param text.color Color of text
+#' @param main.text.color Color of main text
+#' @param sub.text.color Color of smaller text
 #' @param base.size Base text size
 #' @param plot.background.color Color of plot background, passed to `plot.background`
 #' @param legend.position Position of legend
@@ -25,7 +26,8 @@
 #' @export
 new_retro <- function(
         font = "SF Alien Encounters",
-        text.color = "#FA5F70FF",
+        main.text.color = "#FA5F70FF",
+        sub.text.color = "#FA5F70FF",
         base.size = 15,
         plot.background.color = "#0F0D1A",
         legend.position = "right",
@@ -47,12 +49,12 @@ new_retro <- function(
                 plot.title=ggplot2::element_text(family=font,
                                                    size=title.size,
                                                    face="bold",
-                                                   color=text.color),
+                                                   color=main.text.color),
                 #This sets the font, size, type and colour of text for the chart's subtitle, as well as setting a margin between the title and the subtitle
                 plot.subtitle=ggplot2::element_text(family=font,
                                                       size=subtitle.size,
                                                       face="bold",
-                                                      color=text.color,
+                                                      color=main.text.color,
                                                       margin=ggplot2::margin(9,0,9,0)),
                 #Legend format
                 #This sets the position and alignment of the legend, removes a title and backround for it and sets the requirements for any text within the legend. The legend may often need some more manual tweaking when it comes to its exact position based on the plot coordinates.
@@ -62,19 +64,19 @@ new_retro <- function(
                 legend.key=ggplot2::element_blank(),
                 legend.text=ggplot2::element_text(family=font,
                                                     size=legend.text,
-                                                    color=text.color),
+                                                    color=main.text.color),
                 legend.title=ggplot2::element_text(family=font,
                                                      size=legend.title,
-                                                     color=text.color),
+                                                     color=main.text.color),
 
                 #Axis format
                 #This sets the text font, size and colour for the axis test, as well as setting the margins and removes lines and ticks. In some cases, axis lines and axis ticks are things we would want to have in the chart - the cookbook shows examples of how to do so.
                 axis.title=ggplot2::element_text(family=font,
                                                    size=axis.title.size,
-                                                   color=text.color),
+                                                   color=main.text.color),
                 axis.text=ggplot2::element_text(family=font,
                                                   size=axis.text.size,
-                                                  color=text.color),
+                                                  color=main.text.color),
                 axis.text.x=ggplot2::element_text(margin=ggplot2::margin(5, b=10)),
                 axis.text.y = ggplot2::element_text(margin=ggplot2::margin(l = 10)),
                 axis.ticks=ggplot2::element_blank(),
@@ -102,11 +104,13 @@ new_retro <- function(
                         linetype = "solid",
                         size = 0.75
                 ),
-                plot.caption = ggplot2::element_text(color=text.color),
+                plot.caption = ggplot2::element_text(color=main.text.color),
 
                 #Strip background (#This sets the panel background for facet-wrapped plots to white, removing the standard grey ggplot background colour and sets the title size of the facet-wrap title to font size 22)
                 strip.background = ggplot2::element_rect(fill=panel.background),
-                strip.text= ggplot2::element_text(size  = 12,  hjust = 0)
+                strip.text= ggplot2::element_text(colour = main.text.color,
+                                                  size  = 12,
+                                                  hjust = 0)
 
         )
 }
