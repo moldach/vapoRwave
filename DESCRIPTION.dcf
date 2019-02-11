@@ -1,0 +1,15 @@
+Package: vapoRwave
+Title: A vaporwave theme for ggplot2 graphics
+Version: 0.0.0.9000
+Authors@R:
+    person(given = "Matthew",
+           family = "Oldach",
+           role = c("aut", "cre"),
+           email = "moldach686@gmail.com")
+Description: Giving a bit of 80's flair to ggplot2
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/moldach/vapoRwave
+BugReports: https://github.com/moldach/vapoRwave/issues
+RoxygenNote: 6.1.1
