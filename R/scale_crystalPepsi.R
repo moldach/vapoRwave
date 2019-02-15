@@ -6,7 +6,14 @@ crystalPepsi_palette <- c(
 )
 
 
-#' crystalPepsi palette
+#' Crystal Pepsi Colour and Fill Scales
+#'
+#' Colour scales based on the Crystal Pepsi craze of the early 1990's
+#'
+#' @references https://en.wikipedia.org/wiki/Crystal_Pepsi
+#' @seealso [ggplot2::scale_colour_discrete] [ggplot2:scale_fill_discrete]
+#' @inheritDotParams ggplot2::discrete_scale
+#' @name scale_crystalPepsi
 #'
 #' @return the crystalPepsi palette
 #' @export
