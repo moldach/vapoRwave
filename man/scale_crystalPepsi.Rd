@@ -2,10 +2,16 @@
 % Please edit documentation in R/scale_crystalPepsi.R
 \name{scale_crystalPepsi}
 \alias{scale_crystalPepsi}
-\alias{crystalPepsi_pal}
+\alias{scale_colour_crystalPepsi}
+\alias{scale_color_crystalPepsi}
+\alias{scale_fill_crystalPepsi}
 \title{Crystal Pepsi Colour and Fill Scales}
 \usage{
-crystalPepsi_pal()
+scale_colour_crystalPepsi(...)
+
+scale_color_crystalPepsi()
+
+scale_fill_crystalPepsi(...)
 }
 \arguments{
 \item{...}{Arguments passed on to \code{ggplot2::discrete_scale}
