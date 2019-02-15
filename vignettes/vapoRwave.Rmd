@@ -46,9 +46,17 @@ On the visual side it's know for A E S T H E T I C S with fullwidth characters i
 
 There are three theme-generating functions:
 
-+ `floral_shoppe()` sets the plot theme to match the most recognized album cover in vaporwave, Vektroid's *Floral Shoppe* released under the one-time pseudonym of [Macintosh Plus](https://en.wikipedia.org/wiki/Floral_Shoppe).
+### floral_shoppe() 
+
+sets the plot theme to match the most recognized album cover in vaporwave, Vektroid's *Floral Shoppe* released under the one-time pseudonym of [Macintosh Plus](https://en.wikipedia.org/wiki/Floral_Shoppe).
+
 + `new_retro()` sets the plot theme to match the A E S T H E T I C of [New Retro Wave](https://newretrowave.com/).
-+ `jwz()` sets the plot theme to match the personal blog of the American programmer [jwz](https://www.jwz.org/blog/).
+
+### jwz() 
+
+The `jwz()` function sets the plot theme to match the personal blog of the American programmer [jwz](https://www.jwz.org/blog/).
+
+James Werner Zawinski known as jwz was a programmer known for contributions to your parents browser (netscape yo!), Mozilla (firefox, *etc.*) and  XEmacs. In 2000, Zawinski starred in the 60-minute-long PBS documentary "Code Rush". The footage was taken during 1998 while Zawinski was still working for Netscape in which he is portrayed as a pivotal person in the company. In addition, he underlined his preference for the night scene which led him to buy a nightclub.
 
 ## Color Palette's
 
@@ -150,7 +158,7 @@ ggplot(mpg, aes(class, cty)) +
 You will need to download the following `ttf` fonts to use this package. You can import them with the [`extrafont` package](https://github.com/wch/extrafont). 
 
 + [Alien Encounters](http://www.hipsthetic.com/alien-encounters-free-80s-font-family/) the font used by the Dream Catalogue Vaporwave record label. This typeface invokes the forward learning, horizontally sliced fonts of Blade Runner and Tron.
-+ [VCR OSD Mono](http://www.hipsthetic.com/vcr-osd-mono-free-pixel-font/) a font that evokes a child-like nostalgia associated with 8-bit consoles and malfunctioning VHS tapes.
++ [VCR OSD Mono](http://www.hipsthetic.com/vcr-osd-mono-free-pixel-font/) Pixel art is a mainstay of Vaporwave art, it evokes a child-like nostalgia associated with 8-bit consoles and runs with the movements Japanese leanings. Fittingly, VCR OSD Mono’s glitch-y, pixelated form plays on video game culture and compliments the warbled, pitched down vocals of Vaporwave that often mimic malfunctioning VHS tapes. 
 + [Windows Command Prompt](https://www.dafont.com/windows-command-prompt.font)
 + [Blade Runner](https://www.fontspace.com/phil-steinschneider/blade-runner-movie-font) a font from the motion picture Blade Runner.
 + [Streamster](http://www.hipsthetic.com/streamster-free-80s-script-font/) a font that can be used with vintage textures, 80's iconography and neon-lit colour palettes.
