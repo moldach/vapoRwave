@@ -8,44 +8,36 @@ avanti_palette <- c(
 
 
 
-#' avanti palette
+#' Avanti Colour and Fill Scales
+#' @seealso [ggplot2::scale_colour_discrete] [ggplot2:scale_fill_discrete]
+#' @inheritDotParams ggplot2::discrete_scale
+#' @name scale_avanti
 #'
-#' @return avanti palette
+#' @return the avanti palette
 #' @export
 #'
+NULL
+
 avanti_pal <- function(){
         scales::manual_pal(avanti_palette)
 }
 
 
-#' scale_colour_avanti
-#'
-#' @param ... pass me the palette
-#'
-#' @return scale_colour_avanti
+#' @rdname scale_avanti
 #' @export
-#'
 scale_colour_avanti <- function(...) {
         ggplot2::discrete_scale("colour", "avanti", avanti_pal(), ...)
 }
 
-#' scale_color_avanti
-#'
-#' @return scale_color_avanti
+#' @rdname scale_avanti
 #' @export
-#'
 scale_color_avanti <- function(){
         scale_colour_avanti
 }
 
 
-#' scale_fill_avanti
-#'
-#' @param ... pass me the palette
-#'
-#' @return
+#' @rdname scale_avanti
 #' @export
-#'
 scale_fill_avanti <- function(...) {
         ggplot2::discrete_scale('fill', 'avanti', avanti_pal(), ...)
 }
