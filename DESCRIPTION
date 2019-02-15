@@ -6,7 +6,7 @@ Authors@R:
            family = "Oldach",
            role = c("aut", "cre"),
            email = "moldach686@gmail.com")
-Description: Giving a bit of 80's flair to ggplot2
+Description: Giving a bit of 80's flair to ggplot2.
 Imports:
         ggplot2,
         scales
