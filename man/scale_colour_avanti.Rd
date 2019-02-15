@@ -9,6 +9,9 @@ scale_colour_avanti(...)
 \arguments{
 \item{...}{pass me the palette}
 }
+\value{
+scale_colour_avanti
+}
 \description{
 scale_colour_avanti
 }

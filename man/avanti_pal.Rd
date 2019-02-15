@@ -2,10 +2,13 @@
 % Please edit documentation in R/scale_avanti.R
 \name{avanti_pal}
 \alias{avanti_pal}
-\title{Avanti Colors and palette}
+\title{avanti palette}
 \usage{
 avanti_pal()
 }
+\value{
+avanti palette
+}
 \description{
-Avanti Colors and palette
+avanti palette
 }
