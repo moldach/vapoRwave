@@ -16,8 +16,7 @@ devtools::install_github("moldach/vapoRwave")
 Introduction
 ------------
 
-<!-- Links -->
-<img src="Readme_files/figure-gfm/cicero.png" />
+![](inst/image/cicero.png)
 
 This package provides a number of `ggplot2` themes inspired by [vaporwave](https://en.wikipedia.org/wiki/Vaporwave), both a subgenre of electronic music and an art movement. Here's a nice sampling here: [link](http://rozap.github.io/vaporwave/).
 
@@ -27,7 +26,7 @@ On the visual side it's know for A E S T H E T I C S with fullwidth characters i
 
 > Aesthetic, often stylized as a e s t h e t i c, refers to retro-inspired visual art and music associated with the vaporwave subculture, which typically include Japanese lettering and nostalgic themes from 1980s and 1990s computer operating systems and video game consoles. Additionally, the term is widely associated with the 2012 vaporwave song “リサフランク420 / 現代のコンピュー” by Macintosh Plus...
 
-<img src="Readme_files/figure-gfm/vaporwave.gif" /> <img src="Readme_files/figure-gfm/digital_aes.jpg" /> <img src="Readme_files/figure-gfm/ClKW.gif" /> <img src="Readme_files/figure-gfm/snapshot.jpg" /> <img src="Readme_files/figure-gfm/outrun.gif" />
+![](inst/image/vaporwave.gif) ![](inst/image/digital_aes.jpg) ![](inst/image/ClKW.gif) ![](inst/image/snapshot.jpg) ![](inst/image/outrun.gif)
 
 Setup theme and scales
 ----------------------
@@ -45,29 +44,29 @@ The colors for this theme were drawn from many vaporwave images; I selected thos
 
 ### Floral Shoppe Palette
 
-<img src="Readme_files/figure-gfm/floralShoppe_palette.png" />
+![](inst/image/floralShoppe_palette.png)
 
 ### New Retro Palette
 
-<img src="Readme_files/figure-gfm/newRetro_palette.png" />
+![](inst/image/newRetro_palette.png)
 
 ### jwz Palette
 
-<img src="Readme_files/figure-gfm/jwz_palette.png" />
+![](inst/image/jwz_palette.png)
 
 ### Hotline Bling Palette
 
-<img src="Readme_files/figure-gfm/hotlineBling_palette.png" />
+![](inst/image/hotlineBling_palette.png)
 
 ### Hyper Bubble Palette
 
-<img src="Readme_files/figure-gfm/hyperBubble_palette.png" />
+![](inst/image/hyperBubble_palette.png)
 
 ### dantaki/vapeplot
 
 There was a `matplotlib` extension for python with a couple of vaporwave palettes I incorportaed as well
 
-<img src="Readme_files/figure-gfm/vapeplot.png" />
+![](inst/image/vapeplot.png)
 
 Demos
 -----
@@ -81,7 +80,7 @@ library(extrafont)
 
 ### Floral Shoppe
 
-<img src="Readme_files/figure-gfm/FloralShoppe.png" />
+![](inst/image/FloralShoppe.png)
 
 ``` r
 # use palette_03
@@ -94,11 +93,11 @@ ggplot(mpg, aes(displ)) +
         subtitle="Engine Displacement across Vehicle Classes") + floral_shoppe() + scale_fill_floralShoppe()
 ```
 
-![](Readme_files/figure-markdown_github/floralShoppe_01-1.png)
+![](inst/image/floralShoppe_01-1.png)
 
 ### New retro
 
-<img src="Readme_files/figure-gfm/new_retro.jpg" />
+![](inst/image/new_retro.jpg)
 
 ``` r
 options(scipen=999)  # turn-off scientific notation like 1e+48
@@ -119,11 +118,11 @@ ggplot(midwest, aes(x=area, y=poptotal)) +
 #> Warning: Removed 15 rows containing missing values (geom_point).
 ```
 
-![](Readme_files/figure-markdown_github/newRetro_01-1.png)
+![](inst/image/newRetro_01-1.png)
 
 ### JWZ Style
 
-<img src="Readme_files/figure-gfm/jwz.jpg" />
+![](inst/image/jwz.jpg)
 
 ``` r
 library(ggthemes)
@@ -139,7 +138,7 @@ ggplot(mpg, aes(class, cty)) +
         scale_fill_jwz()
 ```
 
-![](Readme_files/figure-markdown_github/jwz_01-1.png)
+![](inst/image/jwz_01-1.png)
 
 Fonts
 -----
@@ -199,7 +198,7 @@ ggplot(df, aes(x = x, y = y, fill = category)) +
          caption="Source: mpg") + new_retro(font = "SF Alien Encounters Solid", main.text.color = "pink")
 ```
 
-![](Readme_files/figure-markdown_github/newRetro_02-1.png)
+![](inst/image/newRetro_02-1.png)
 
 ``` r
 library(gapminder)
@@ -216,7 +215,7 @@ ggplot(filter(gapminder, year == 2007), aes(x = gdpPercap, y = lifeExp)) +
     jwz(font = "Streamster", main.text.color = "#FFCCFF", sub.text.color = "#CCFFFF", subtitle.size = 16) + scale_fill_hyperBubble()
 ```
 
-![](Readme_files/figure-markdown_github/jwz_02-1.png)
+![](inst/image/jwz_02-1.png)
 
 Changing parameters
 -------------------
@@ -242,7 +241,7 @@ ggplot(df, aes(x = year, y = gdpPercap, fill = country)) +
   scale_fill_newRetro()
 ```
 
-![](Readme_files/figure-markdown_github/newRetro_03-1.png)
+![](inst/image/newRetro_03-1.png)
 
 ``` r
 library(forecast)
@@ -254,7 +253,7 @@ nottem_small <- window(nottem, start=c(1920, 1), end=c(1925, 12))  # subset a sm
 ggseasonplot(nottem_small) + labs(title="Seasonal B plot:", subtitle = "Air temperatures at Nottingham Castle") + scale_colour_jwz() + new_retro(font = "Blade Runner Movie Font")
 ```
 
-![](Readme_files/figure-markdown_github/jwz_03-1.png)
+![](inst/image/jwz_03-1.png)
 
 `vapoRwave` also works with `ggplot2` extensions.
 
@@ -270,7 +269,7 @@ ggcorrplot(corr, hc.order = T,
            lab = T) + floral_shoppe()
 ```
 
-![](Readme_files/figure-markdown_github/floralShoppe_02-1.png)
+![](inst/image/floralShoppe_02-1.png)
 
 ``` r
 library(WVPlots) 
@@ -286,7 +285,7 @@ PairPlot(iris,
 #> 'colour', which will replace the existing scale.
 ```
 
-![](Readme_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](inst/image/unnamed-chunk-3-1.png)
 
 If you need to use a color gradient take a look at the html color codes for the palette in the `Readme_files` folder and insert your choice in `low` and `high`.
 
@@ -297,4 +296,4 @@ ggplot(faithful, aes(x = eruptions, y = waiting)) +
         scale_fill_gradient(low = "#55FFFF", high = "#8B2E8B")
 ```
 
-![](Readme_files/figure-markdown_github/floralShoppe3w-1.png)
+![](inst/image/floralShoppe3w-1.png)

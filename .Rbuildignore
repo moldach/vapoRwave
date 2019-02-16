@@ -1,3 +1,8 @@
+^Meta$
+^doc$
 ^LICENSE\.md$
 ^vapoRwave\.Rproj$
 ^\.Rproj\.user$
+^Readme.md$
+^Readme.Rmd$
+^Readme_files

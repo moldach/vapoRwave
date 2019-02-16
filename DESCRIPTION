@@ -9,10 +9,19 @@ Authors@R:
 Description: Giving a bit of 80's flair to ggplot2.
 Imports:
         ggplot2,
-        scales
+        scales,
+        knitr
+Suggests: 
+        WVPlots,
+        tidyverse,
+        extrafont,
+        forecast,
+        gapminder,
+        ggcorrplot
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/moldach/vapoRwave
 BugReports: https://github.com/moldach/vapoRwave/issues
 RoxygenNote: 6.1.1
+VignetteBuilder: knitr
