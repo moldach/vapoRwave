@@ -11,6 +11,9 @@ This package isn't on CRAN, so you'll need to use the devtools package to instal
 # If you don't have devtools installed
 install.packages("devtools")
 devtools::install_github("moldach/vapoRwave")
+
+# To include the vignette
+devtools::install_github("moldach/vapoRwave", build_vignettes=TRUE)
 ```
 
 Introduction
