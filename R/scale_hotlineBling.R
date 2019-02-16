@@ -9,28 +9,35 @@ hotlineBling_palette <- c(
         ,"#270042"
 )
 
-#' hotlineBling_pal
+#' Hotline Bling Colour and Fill Scales
 #'
+#' Colour scales based on the Drake's Hotline Bling
+#'
+#' @references https://www.youtube.com/watch?v=uxpDa-c-4Mc
+#' @seealso [ggplot2::scale_colour_discrete] [ggplot2:scale_fill_discrete]
+#' @inheritDotParams ggplot2::discrete_scale
+#' @name hotlineBling_pal
+#'
+#' @return the Hotline Bling palette
 #' @export
+#'
+NULL
+
 hotlineBling_pal <- function() {
         scales::manual_pal(hotlineBling_palette)
 }
 
-#' scale_colour_hotlineBling
-#'
-#' @param ... pass me the palette
-#'
+#' @rdname hotlineBling_pal
 #' @export
 scale_colour_hotlineBling <- function(...){
         ggplot2::discrete_scale("colour", "hotlineBling", hotlineBling_pal(), ...)
 }
 
+#' @rdname hotlineBling_pal
+#' @export
 scale_color_hotlineBling <- scale_colour_hotlineBling
 
-#' scale_fill_hotlineBling
-#'
-#' @param ... pass me the palette
-#'
+#' @rdname hotlineBling_pal
 #' @export
 scale_fill_hotlineBling <- function(...){
         ggplot2::discrete_scale('fill', 'hotlineBling', hotlineBling_pal(), ...)

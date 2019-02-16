@@ -64,23 +64,33 @@ The colors for this theme were drawn from many vaporwave images; I selected thos
 
 ### Floral Shoppe Palette
 
-<img src="Readme_files/figure-gfm/floralShoppe_palette.png" />
+```{r}
+scales::show_col(vapoRwave:::floralShoppe_palette)
+```
 
 ### New Retro Palette
 
-<img src="Readme_files/figure-gfm/newRetro_palette.png" />
+```{r}
+scales::show_col(vapoRwave:::newRetro_palette)
+```
 
 ### jwz Palette
 
-<img src="Readme_files/figure-gfm/jwz_palette.png" />
+```{r}
+scales::show_col(vapoRwave:::jwz_palette)
+```
 
 ### Hotline Bling Palette
 
-<img src="Readme_files/figure-gfm/hotlineBling_palette.png" />
+```{r}
+scales::show_col(vapoRwave:::hotlineBling_palette)
+```
 
 ### Hyper Bubble Palette
 
-<img src="Readme_files/figure-gfm/hyperBubble_palette.png" />
+```{r}
+scales::show_col(vapoRwave:::hyperBubble_palette)
+```
 
 ### dantaki/vapeplot
 

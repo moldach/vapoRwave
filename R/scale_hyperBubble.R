@@ -9,28 +9,31 @@ hyperBubble_palette <- c(
 
 )
 
-#' hyperBubble_pal
+#' Hyper Bubble Colour and Fill Scales
 #'
+#' @seealso [ggplot2::scale_colour_discrete] [ggplot2:scale_fill_discrete]
+#' @inheritDotParams ggplot2::discrete_scale
+#' @name hyperBubble_pal
+#'
+#' @return the Hyper Bubble palette
 #' @export
+#'
+NULL
 hyperBubble_pal <- function(){
         scales::manual_pal(hyperBubble_palette)
 }
 
-#' scale_colour_hyperBubble
-#'
-#' @param ... pass me the palette
-#'
+#' @rdname hyperBubble_pal
 #' @export
 scale_colour_hyperBubble <- function(...){
         ggplot2::discrete_scale("colour", "hyperBubble", hyperBubble_pal(), ...)
 }
 
+#' @rdname hyperBubble_pal
+#' @export
 scale_color_hyperBubble <- scale_colour_hyperBubble
 
-#' scale_fill_hyperBubble
-#'
-#' @param ... pass me the palette
-#'
+#' @rdname hyperBubble_pal
 #' @export
 scale_fill_hyperBubble <- function(...){
         ggplot2::discrete_scale('fill', 'hyperBubble', hyperBubble_pal(), ...)

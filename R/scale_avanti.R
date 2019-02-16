@@ -11,7 +11,7 @@ avanti_palette <- c(
 #' Avanti Colour and Fill Scales
 #' @seealso [ggplot2::scale_colour_discrete] [ggplot2:scale_fill_discrete]
 #' @inheritDotParams ggplot2::discrete_scale
-#' @name scale_avanti
+#' @name avanti_pal
 #'
 #' @return the avanti palette
 #' @export
@@ -23,20 +23,20 @@ avanti_pal <- function(){
 }
 
 
-#' @rdname scale_avanti
+#' @rdname avanti_pal
 #' @export
 scale_colour_avanti <- function(...) {
         ggplot2::discrete_scale("colour", "avanti", avanti_pal(), ...)
 }
 
-#' @rdname scale_avanti
+#' @rdname avanti_pal
 #' @export
 scale_color_avanti <- function(){
         scale_colour_avanti
 }
 
 
-#' @rdname scale_avanti
+#' @rdname avanti_pal
 #' @export
 scale_fill_avanti <- function(...) {
         ggplot2::discrete_scale('fill', 'avanti', avanti_pal(), ...)
