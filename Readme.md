@@ -1,6 +1,15 @@
 VapoRwave Themes
-================
-Matthew J. Oldach
+
+[![Travis-CI Build Status](https://travis-ci.org/moldach/vapoRwave.png?branch=master)](https://travis-ci.org/moldach/vapoRwave)
+[![Coverage Status](https://coveralls.io/repos/zozlak/sampleProject/badge.svg?branch=master&service=github)](https://coveralls.io/github/moldach/vapoRwave?branch=master)
+
+Contact information
+------------
+Matthew J. Oldach 
+
++ E-mail: moldach686@gmail.com
++ Twitter: [@MattOldach](https://twitter.com/MattOldach)
++ Website: [https://moldach.github.io/](https://moldach.github.io/)
 
 Installation
 ------------

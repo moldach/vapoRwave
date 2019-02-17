@@ -1,0 +1,16 @@
+# http://docs.travis-ci.com/user/languages/r/
+language: r
+
+cache: packages
+
+r:
+  - release
+
+after_success:
+  - Rscript -e 'library(covr);coveralls()'
+
+warnings_are_errors: false
+
+notifications:
+  email:
+    - moldach686@gmail.com
