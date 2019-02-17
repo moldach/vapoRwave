@@ -47,7 +47,7 @@ jwz(font = "Windows Command Prompt", main.text.color = "#02BAFF",
 \item{title.size}{Size of title}
 }
 \description{
-[ggplot2] plot theme based on the personal blog of Jamie Zawinski
+ggplot2 plot theme based on the personal blog of Jamie Zawinski
 }
 \references{
 https://en.wikipedia.org/wiki/Jamie_Zawinski

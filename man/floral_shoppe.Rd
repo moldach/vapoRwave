@@ -47,7 +47,7 @@ floral_shoppe(font = "VCR OSD Mono", main.text.color = "#6CFFB9",
 \item{title.size}{Size of title}
 }
 \description{
-[ggplot2] plot theme based on the Floral Shoppe album cover
+ggplot2 plot theme based on the Floral Shoppe album cover
 }
 \references{
 https://beerontherug.bandcamp.com/album/floral-shoppe

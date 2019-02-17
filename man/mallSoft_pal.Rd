@@ -71,12 +71,12 @@ scales, "top" or "bottom" for horizontal scales}
 the Mallsoft palette
 }
 \description{
-Colour scales based on the Mallsoft vaporwave genre
-}
-\details{
 Mallsoft takes classic vaporwave’s interest in consumeristic detachment
 and uses it as the thematic basis for spacious ambient music
 in the imagined space of the suburban shopping mall
+}
+\details{
+Colour scales based on the Mallsoft vaporwave genre
 }
 \references{
 https://indie88.com/mallsoft/

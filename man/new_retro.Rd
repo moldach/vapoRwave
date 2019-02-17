@@ -47,7 +47,7 @@ new_retro(font = "SF Alien Encounters", main.text.color = "#FA5F70FF",
 \item{title.size}{Size of title}
 }
 \description{
-[ggplot2] plot theme based on the New Retro labels A E S T H E T I C
+ggplot2 plot theme based on the New Retro labels A E S T H E T I C
 }
 \references{
 https://newretrowave.com/

@@ -13,29 +13,33 @@ vapoRwave_palette <- c(
 )
 
 
-#' VapoRwave Colors and palette
+#' VapoRwave Colour and Fill Scales
 #'
+#' @seealso [ggplot2::scale_colour_discrete] [ggplot2:scale_fill_discrete]
+#' @inheritDotParams ggplot2::discrete_scale
+#' @name vapoRwave_pal
+#'
+#' @return the vapoRwave palette
 #' @export
+#'
+NULL
+
 vapoRwave_pal <- function(){
         scales::manual_pal(vapoRwave_palette)
 }
 
-#' scale_colour_vapoRwave
-#'
-#' @param ... pass me the palette
-#'
+#' @rdname vapoRwave_pal
 #' @export
 scale_colour_vapoRwave <- function(...) {
         ggplot2::discrete_scale("colour", "vapoRwave", vapoRwave_pal(), ...)
 }
 
+#' @rdname vapoRwave_pal
+#' @export
 scale_color_vapoRwave <- scale_colour_vapoRwave
 
 
-#' scale_fill_vapoRwave
-#'
-#' @param ... pass me the palette
-#'
+#' @rdname vapoRwave_pal
 #' @export
 scale_fill_vapoRwave <- function(...) {
         ggplot2::discrete_scale('fill', 'vapoRwave', vapoRwave_pal(), ...)
