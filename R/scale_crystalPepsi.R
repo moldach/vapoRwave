@@ -7,7 +7,7 @@ crystalPepsi_palette <- c(
 
 
 #' Crystal Pepsi Colour and Fill Scales
-#'
+#' @description
 #' Colour scales based on the Crystal Pepsi craze of the early 1990's
 #'
 #' @references https://en.wikipedia.org/wiki/Crystal_Pepsi

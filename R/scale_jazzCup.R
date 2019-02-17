@@ -8,7 +8,7 @@ jazzCup_palette <- c(
 
 
 #' Jazz Cup Colour and Fill Scales
-#'
+#' @description
 #' Colour scales based on the Solo Jazz Pattern on waxed paper cups in the 90's
 #'
 #' @references https://knowyourmeme.com/memes/solo-jazz-pattern

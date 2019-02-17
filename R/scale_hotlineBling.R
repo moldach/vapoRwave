@@ -10,7 +10,7 @@ hotlineBling_palette <- c(
 )
 
 #' Hotline Bling Colour and Fill Scales
-#'
+#' @description
 #' Colour scales based on the Drake's Hotline Bling
 #'
 #' @references https://www.youtube.com/watch?v=uxpDa-c-4Mc

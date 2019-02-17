@@ -1,6 +1,6 @@
 #' Floral Shoppe Theme
-#'
-#' [ggplot2] plot theme based on the Floral Shoppe album cover
+#' @description
+#' ggplot2 plot theme based on the Floral Shoppe album cover
 #'
 #' @references https://beerontherug.bandcamp.com/album/floral-shoppe
 #' @seealso [ggplot2::theme]

@@ -11,7 +11,7 @@ newRetro_palette <- c(
 )
 
 #' New Retro Colour and Fill Scales
-#'
+#' @description
 #' Colour scales based on the New Retro vaporwave record label "Live the 80's Dream!"
 #'
 #' @references https://newretrowave.com/

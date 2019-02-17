@@ -1,6 +1,6 @@
 #' New Retro Theme
-#'
-#' [ggplot2] plot theme based on the New Retro labels A E S T H E T I C
+#' @description
+#' ggplot2 plot theme based on the New Retro labels A E S T H E T I C
 #'
 #'
 #' @references https://newretrowave.com/

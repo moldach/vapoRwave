@@ -1,6 +1,6 @@
 #' jwz Theme
-#'
-#' [ggplot2] plot theme based on the personal blog of Jamie Zawinski
+#' @description
+#' ggplot2 plot theme based on the personal blog of Jamie Zawinski
 #'
 #' @references https://en.wikipedia.org/wiki/Jamie_Zawinski
 #' @seealso [ggplot2::theme]

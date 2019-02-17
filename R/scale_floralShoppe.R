@@ -11,7 +11,7 @@ floralShoppe_palette <- c(
 
 
 #' Floral Shoppe Colour and Fill Scales
-#'
+#' @description
 #' Colour scales based on the Floral Shoppe Album cover by Macplus
 #'
 #' @references https://beerontherug.bandcamp.com/album/floral-shoppe

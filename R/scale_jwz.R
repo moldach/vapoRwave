@@ -10,7 +10,7 @@ jwz_palette <- c(
 )
 
 #' jwz Colour and Fill Scales
-#'
+#' @description
 #' Colour scales based on the personal blog of computer programmer Jamie Zawinski
 #'
 #' @references https://www.jwz.org/blog/

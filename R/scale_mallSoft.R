@@ -11,7 +11,7 @@ mallSoft_palette <- c(
 #' Mallsoft Colour and Fill Scales
 #'
 #' Colour scales based on the Mallsoft vaporwave genre
-#'
+#' @description
 #' Mallsoft takes classic vaporwave’s interest in consumeristic detachment
 #' and uses it as the thematic basis for spacious ambient music
 #' in the imagined space of the suburban shopping mall

@@ -9,7 +9,7 @@ macPlus_palette <- c(
 
 
 #' Macintosh Plus Colour and Fill Scales
-#'
+#' @description
 #' Colour scales as tribute to the Machintosh Plus released in 1986
 #'
 #' @references https://en.wikipedia.org/wiki/Macintosh_Plus

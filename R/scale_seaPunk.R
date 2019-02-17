@@ -8,7 +8,7 @@ seaPunk_palette <- c(
 
 
 #' Seapunk Colour and Fill Scales
-#'
+#' @description
 #' Colour scales based on the Seapunk subculture from Tumblr in 2011
 #' It is often associated with an aquatic-themed style of fashion,
 #' 3D net art, iconography, and allusions to popular culture of the 1990s.

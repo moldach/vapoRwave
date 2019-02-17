@@ -9,7 +9,6 @@ sunSet_palette <- c(
 
 #' Sunset Colour and Fill Scales
 #'
-#'
 #' @seealso [ggplot2::scale_colour_discrete] [ggplot2:scale_fill_discrete]
 #' @inheritDotParams ggplot2::discrete_scale
 #' @name sunSet_pal
