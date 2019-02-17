@@ -1,7 +1,7 @@
 # VapoRwave Themes
 
 [![Travis-CI Build Status](https://travis-ci.org/moldach/vapoRwave.png?branch=master)](https://travis-ci.org/moldach/vapoRwave)
-[![Coverage Status](https://coveralls.io/repos/zozlak/sampleProject/badge.svg?branch=master&service=github)](https://coveralls.io/github/moldach/vapoRwave?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/moldach/vapoRwave/badge.svg?branch=master)](https://coveralls.io/github/moldach/vapoRwave?branch=master)
 
 Contact information
 ------------
