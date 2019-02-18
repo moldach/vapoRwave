@@ -1,7 +1,5 @@
 # VapoRwave Themes
 
-[![Travis-CI Build Status](https://travis-ci.org/moldach/vapoRwave.png?branch=master)](https://travis-ci.org/moldach/vapoRwave)
-[![Coverage Status](https://coveralls.io/repos/github/moldach/vapoRwave/badge.svg?branch=master)](https://coveralls.io/github/moldach/vapoRwave?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/moldach/vapoRwave/blob/master/LICENSE.md)
 
 Contact information
