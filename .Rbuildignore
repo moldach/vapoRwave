@@ -1,5 +1,7 @@
 ^LICENSE\.md$
+^LICENSE
 ^vapoRwave\.Rproj$
 ^\.Rproj\.user$
 ^Readme.md$
 ^Readme.Rmd$
+^.travis.yml$
