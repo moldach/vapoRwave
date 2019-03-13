@@ -1,89 +1,144 @@
-# VapoRwave Themes
+VapoRwave Themes
+================
+Matthew J. Oldach
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/moldach/vapoRwave/blob/master/LICENSE.md)
+[![License:
+MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/moldach/vapoRwave/blob/master/LICENSE.md)
 
-Contact information
-------------
-Matthew J. Oldach 
+## Installation
 
-+ E-mail: moldach686@gmail.com
-+ Twitter: [@MattOldach](https://twitter.com/MattOldach)
-+ Website: [https://moldach.github.io/](https://moldach.github.io/)
-
-Installation
-------------
-
-This package isn't on CRAN, so you'll need to use the devtools package to install it.
+Use the `devtools` package to install it.
 
 ``` r
-# If you don't have devtools installed
-install.packages("devtools")
 devtools::install_github("moldach/vapoRwave")
 
 # To include the vignette
 devtools::install_github("moldach/vapoRwave", build_vignettes=TRUE)
 ```
 
-Introduction
-------------
+## Introduction
 
-![](inst/image/cicero.png)
+<!-- Links -->
 
-This package provides a number of `ggplot2` themes inspired by [vaporwave](https://en.wikipedia.org/wiki/Vaporwave), both a subgenre of electronic music and an art movement. Here's a nice sampling here: [link](http://rozap.github.io/vaporwave/).
+![](figure-gfm/cicero.png)
 
-On the musical side it's known for it's appropriation of 1980's and 1990's elevator/lounge music along with the application of slowed-down chopped and screwed techniques, looping and other effects.
+This package provides a number of `ggplot2` themes inspired by
+[vaporwave](https://en.wikipedia.org/wiki/Vaporwave), both a subgenre of
+electronic music and an art movement. Here’s a nice sampling here:
+[link](http://rozap.github.io/vaporwave/).
 
-On the visual side it's know for A E S T H E T I C S with fullwidth characters it's satrical takes on consumer capitalism (*.e.g* the use wih Greco-Roman statues to signify the fall of capitalism), and other nostalgic or surrealist engagement with glitch art, anime, 3D-rendered objects and cyberpunk trope in it's cover art and music videos.
+On the musical side it’s known for it’s appropriation of 1980’s and
+1990’s elevator/lounge music along with the application of slowed-down
+chopped and screwed techniques, looping and other effects.
 
-> Aesthetic, often stylized as a e s t h e t i c, refers to retro-inspired visual art and music associated with the vaporwave subculture, which typically include Japanese lettering and nostalgic themes from 1980s and 1990s computer operating systems and video game consoles. Additionally, the term is widely associated with the 2012 vaporwave song “リサフランク420 / 現代のコンピュー” by Macintosh Plus...
+On the visual side it’s know for A E S T H E T I C S with fullwidth
+characters it’s satrical takes on consumer capitalism (*.e.g* the use
+wih Greco-Roman statues to signify the fall of capitalism), and other
+nostalgic or surrealist engagement with glitch art, anime, 3D-rendered
+objects and cyberpunk trope in it’s cover art and music videos.
 
-![](inst/image/vaporwave.gif) ![](inst/image/digital_aes.jpg) ![](inst/image/ClKW.gif) ![](inst/image/snapshot.jpg) ![](inst/image/outrun.gif)
+> Aesthetic, often stylized as a e s t h e t i c, refers to
+> retro-inspired visual art and music associated with the vaporwave
+> subculture, which typically include Japanese lettering and nostalgic
+> themes from 1980s and 1990s computer operating systems and video game
+> consoles. Additionally, the term is widely associated with the 2012
+> vaporwave song “リサフランク420 / 現代のコンピュー” by Macintosh Plus…
 
-Setup theme and scales
-----------------------
+![](figure-gfm/vaporwave.gif) ![](figure-gfm/digital_aes.jpg)
+![](figure-gfm/ClKW.gif) ![](figure-gfm/snapshot.jpg)
+![](figure-gfm/outrun.gif)
+
+## Setup theme and scales
 
 There are three theme-generating functions:
 
--   `floral_shoppe()` sets the plot theme to match the most recognized album cover in vaporwave, Vektroid's *Floral Shoppe* released under the one-time pseudonym of [Macintosh Plus](https://en.wikipedia.org/wiki/Floral_Shoppe).
--   `new_retro()` sets the plot theme to match the A E S T H E T I C of [New Retro Wave](https://newretrowave.com/).
--   `jwz()` sets the plot theme to match the personal blog of the American programmer [jwz](https://www.jwz.org/blog/).
+### floral\_shoppe()
 
-Color Palette's
----------------
+sets the plot theme to match the most recognized album cover in
+vaporwave, Vektroid’s *Floral Shoppe* released under the one-time
+pseudonym of [Macintosh
+Plus](https://en.wikipedia.org/wiki/Floral_Shoppe).
 
-The colors for this theme were drawn from many vaporwave images; I selected those that worked well together for color and fill scales.
+  - `new_retro()` sets the plot theme to match the A E S T H E T I C of
+    [New Retro Wave](https://newretrowave.com/).
+
+### jwz()
+
+The `jwz()` function sets the plot theme to match the personal blog of
+the American programmer [jwz](https://www.jwz.org/blog/).
+
+James Werner Zawinski known as jwz was a programmer known for
+contributions to your parents browser (netscape yo\!), Mozilla (firefox,
+*etc.*) and XEmacs. In 2000, Zawinski starred in the 60-minute-long PBS
+documentary “Code Rush”. The footage was taken during 1998 while
+Zawinski was still working for Netscape in which he is portrayed as a
+pivotal person in the company. In addition, he underlined his preference
+for the night scene which led him to buy a nightclub.
+
+## Color Palette’s
+
+The colors for this theme were drawn from many vaporwave images; I
+selected those that worked well together for color and fill scales.
 
 ### Floral Shoppe Palette
 
-![](inst/image/floralShoppe_palette.png)
+``` r
+scales::show_col(vapoRwave:::floralShoppe_palette)
+```
+
+![](Readme_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 ### New Retro Palette
 
-![](inst/image/newRetro_palette.png)
+``` r
+scales::show_col(vapoRwave:::newRetro_palette)
+```
+
+![](Readme_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 ### jwz Palette
 
-![](inst/image/jwz_palette.png)
+``` r
+scales::show_col(vapoRwave:::jwz_palette)
+```
+
+![](Readme_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ### Hotline Bling Palette
 
-![](inst/image/hotlineBling_palette.png)
+``` r
+scales::show_col(vapoRwave:::hotlineBling_palette)
+```
+
+![](Readme_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 ### Hyper Bubble Palette
 
-![](inst/image/hyperBubble_palette.png)
+``` r
+scales::show_col(vapoRwave:::hyperBubble_palette)
+```
+
+![](Readme_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 ### dantaki/vapeplot
 
-There was a `matplotlib` extension for python with a couple of vaporwave palettes I incorportaed as well
+There was a `matplotlib` extension for python with a couple of vaporwave
+palettes I incorportaed as well
 
-![](inst/image/vapeplot.png)
+![](figure-gfm/vapeplot.png)
 
-Demos
------
+## Demos
 
 ``` r
 library(tidyverse)
+#> -- Attaching packages ------------------------------------------------ tidyverse 1.2.1 --
+#> v ggplot2 3.1.0       v purrr   0.3.0  
+#> v tibble  2.0.1       v dplyr   0.8.0.1
+#> v tidyr   0.8.2       v stringr 1.4.0  
+#> v readr   1.3.1       v forcats 0.4.0
+#> -- Conflicts --------------------------------------------------- tidyverse_conflicts() --
+#> x dplyr::filter() masks stats::filter()
+#> x dplyr::lag()    masks stats::lag()
 library(vapoRwave)
 library(extrafont)
 #> Registering fonts with R
@@ -91,7 +146,7 @@ library(extrafont)
 
 ### Floral Shoppe
 
-![](inst/image/FloralShoppe.png)
+![](figure-gfm/FloralShoppe.png)
 
 ``` r
 # use palette_03
@@ -104,11 +159,11 @@ ggplot(mpg, aes(displ)) +
         subtitle="Engine Displacement across Vehicle Classes") + floral_shoppe() + scale_fill_floralShoppe()
 ```
 
-![](inst/image/floralShoppe_01-1.png)
+![](Readme_files/figure-gfm/floralShoppe_01-1.png)<!-- -->
 
 ### New retro
 
-![](inst/image/new_retro.jpg)
+![](figure-gfm/new_retro.jpg)
 
 ``` r
 options(scipen=999)  # turn-off scientific notation like 1e+48
@@ -129,14 +184,13 @@ ggplot(midwest, aes(x=area, y=poptotal)) +
 #> Warning: Removed 15 rows containing missing values (geom_point).
 ```
 
-![](inst/image/newRetro_01-1.png)
+![](Readme_files/figure-gfm/newRetro_01-1.png)<!-- -->
 
 ### JWZ Style
 
-![](inst/image/jwz.jpg)
+![](figure-gfm/jwz.jpg)
 
 ``` r
-library(ggthemes)
 ggplot(mpg, aes(class, cty)) +
         geom_boxplot(aes(fill=factor(cyl))) + 
         theme(axis.text.x = element_text(angle=65, vjust=0.6)) + 
@@ -149,20 +203,38 @@ ggplot(mpg, aes(class, cty)) +
         scale_fill_jwz()
 ```
 
-![](inst/image/jwz_01-1.png)
+![](Readme_files/figure-gfm/jwz_01-1.png)<!-- -->
 
-Fonts
------
+## Fonts
 
-You will need to download the following `ttf` fonts to use this package. You can import them with the [`extrafont` package](https://github.com/wch/extrafont).
+You will need to download the following `ttf` fonts to use this package.
+You can import them with the [`extrafont`
+package](https://github.com/wch/extrafont).
 
--   [Alien Encounters](http://www.hipsthetic.com/alien-encounters-free-80s-font-family/) the font used by the Dream Catalogue Vaporwave record label. This typeface invokes the forward learning, horizontally sliced fonts of Blade Runner and Tron.
--   [VCR OSD Mono](http://www.hipsthetic.com/vcr-osd-mono-free-pixel-font/) a font that evokes a child-like nostalgia associated with 8-bit consoles and malfunctioning VHS tapes.
--   [Windows Command Prompt](https://www.dafont.com/windows-command-prompt.font)
--   [Blade Runner](https://www.fontspace.com/phil-steinschneider/blade-runner-movie-font) a font from the motion picture Blade Runner.
--   [Streamster](http://www.hipsthetic.com/streamster-free-80s-script-font/) a font that can be used with vintage textures, 80's iconography and neon-lit colour palettes.
+  - [Alien
+    Encounters](http://www.hipsthetic.com/alien-encounters-free-80s-font-family/)
+    the font used by the Dream Catalogue Vaporwave record label. This
+    typeface invokes the forward learning, horizontally sliced fonts of
+    Blade Runner and Tron.
+  - [VCR OSD
+    Mono](http://www.hipsthetic.com/vcr-osd-mono-free-pixel-font/) Pixel
+    art is a mainstay of Vaporwave art, it evokes a child-like nostalgia
+    associated with 8-bit consoles and runs with the movements Japanese
+    leanings. Fittingly, VCR OSD Mono’s glitch-y, pixelated form plays
+    on video game culture and compliments the warbled, pitched down
+    vocals of Vaporwave that often mimic malfunctioning VHS tapes.
+  - [Windows Command
+    Prompt](https://www.dafont.com/windows-command-prompt.font)
+  - [Blade
+    Runner](https://www.fontspace.com/phil-steinschneider/blade-runner-movie-font)
+    a font from the motion picture Blade
+    Runner.
+  - [Streamster](http://www.hipsthetic.com/streamster-free-80s-script-font/)
+    a font that can be used with vintage textures, 80’s iconography and
+    neon-lit colour palettes.
 
-To verify the installation of these font's on your OS you can look for them with:
+To verify the installation of these font’s on your OS you can look for
+them with:
 
 ``` r
 extrafont::fonts()
@@ -170,13 +242,13 @@ extrafont::fonts()
 
 The above installations wil give you the following fonts
 
--   `SF Alien Encounters`
--   `SF Alien Encounters Solid`
--   `VCR OSD Mono`
--   `OCR A Extended`
--   `Windows Command Prompt`
--   `Blade Runner Movie Font`
--   `Streamster`
+  - `SF Alien Encounters`
+  - `SF Alien Encounters Solid`
+  - `VCR OSD Mono`
+  - `OCR A Extended`
+  - `Windows Command Prompt`
+  - `Blade Runner Movie Font`
+  - `Streamster`
 
 That being said you can use any `ttf` font with the `vapoRwave` package.
 
@@ -209,7 +281,7 @@ ggplot(df, aes(x = x, y = y, fill = category)) +
          caption="Source: mpg") + new_retro(font = "SF Alien Encounters Solid", main.text.color = "pink")
 ```
 
-![](inst/image/newRetro_02-1.png)
+![](Readme_files/figure-gfm/newRetro_02-1.png)<!-- -->
 
 ``` r
 library(gapminder)
@@ -226,12 +298,12 @@ ggplot(filter(gapminder, year == 2007), aes(x = gdpPercap, y = lifeExp)) +
     jwz(font = "Streamster", main.text.color = "#FFCCFF", sub.text.color = "#CCFFFF", subtitle.size = 16) + scale_fill_hyperBubble()
 ```
 
-![](inst/image/jwz_02-1.png)
+![](Readme_files/figure-gfm/jwz_02-1.png)<!-- -->
 
-Changing parameters
--------------------
+## Changing parameters
 
-You are able to change most `ggplot2::theme()` elements from `new_retro()`, `floral_shoppe()` and `jwz()` themes.
+You are able to change most `ggplot2::theme()` elements from
+`new_retro()`, `floral_shoppe()` and `jwz()` themes.
 
 ``` r
 df <- gapminder %>% 
@@ -252,7 +324,7 @@ ggplot(df, aes(x = year, y = gdpPercap, fill = country)) +
   scale_fill_newRetro()
 ```
 
-![](inst/image/newRetro_03-1.png)
+![](Readme_files/figure-gfm/newRetro_03-1.png)<!-- -->
 
 ``` r
 library(forecast)
@@ -264,7 +336,7 @@ nottem_small <- window(nottem, start=c(1920, 1), end=c(1925, 12))  # subset a sm
 ggseasonplot(nottem_small) + labs(title="Seasonal B plot:", subtitle = "Air temperatures at Nottingham Castle") + scale_colour_jwz() + new_retro(font = "Blade Runner Movie Font")
 ```
 
-![](inst/image/jwz_03-1.png)
+![](Readme_files/figure-gfm/jwz_03-1.png)<!-- -->
 
 `vapoRwave` also works with `ggplot2` extensions.
 
@@ -280,7 +352,7 @@ ggcorrplot(corr, hc.order = T,
            lab = T) + floral_shoppe()
 ```
 
-![](inst/image/floralShoppe_02-1.png)
+![](Readme_files/figure-gfm/floralShoppe_02-1.png)<!-- -->
 
 ``` r
 library(WVPlots) 
@@ -296,9 +368,11 @@ PairPlot(iris,
 #> 'colour', which will replace the existing scale.
 ```
 
-![](inst/image/unnamed-chunk-3-1.png)
+![](Readme_files/figure-gfm/WVPlots-1.png)<!-- -->
 
-If you need to use a color gradient take a look at the html color codes for the palette in the `Readme_files` folder and insert your choice in `low` and `high`.
+If you need to use a color gradient take a look at the html color codes
+for the palette in the `Readme_files` folder and insert your choice in
+`low` and `high`.
 
 ``` r
 ggplot(faithful, aes(x = eruptions, y = waiting)) +
@@ -307,4 +381,16 @@ ggplot(faithful, aes(x = eruptions, y = waiting)) +
         scale_fill_gradient(low = "#55FFFF", high = "#8B2E8B")
 ```
 
-![](inst/image/floralShoppe3w-1.png)
+![](Readme_files/figure-gfm/floralShoppe_03-1.png)<!-- -->
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
+of conduct, and the process for submitting pull requests to us.
+
+## License
+
+-----
+
+This code is released under the MIT License - see the
+[LICENSE.md](LICENSE.md) file for details.
