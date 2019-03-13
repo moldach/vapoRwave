@@ -86,7 +86,7 @@ selected those that worked well together for color and fill scales.
 scales::show_col(vapoRwave:::floralShoppe_palette)
 ```
 
-![](Readme_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](Readme_files/figure-gfm/unnamed-chunk-2-1.png)
 
 ### New Retro Palette
 
