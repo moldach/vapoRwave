@@ -25,7 +25,7 @@ devtools::install_github("moldach/vapoRwave", build_vignettes=TRUE)
 This package provides a number of `ggplot2` themes inspired by
 [vaporwave](https://en.wikipedia.org/wiki/Vaporwave), both a subgenre of
 electronic music and an art movement. Here’s a nice sampling here:
-[link](http://rozap.github.io/vaporwave/).
+[link](https://www.youtube.com/watch?v=FZUfiW3W1KY).
 
 On the musical side it’s known for it’s appropriation of 1980’s and
 1990’s elevator/lounge music along with the application of slowed-down
@@ -59,8 +59,9 @@ vaporwave, Vektroid’s *Floral Shoppe* released under the one-time
 pseudonym of [Macintosh
 Plus](https://en.wikipedia.org/wiki/Floral_Shoppe).
 
-  - `new_retro()` sets the plot theme to match the A E S T H E T I C of
-    [New Retro Wave](https://newretrowave.com/).
+### new_retro() 
+
+sets the plot theme to match the A E S T H E T I C of the [New Retro Wave](https://newretrowave.com/) record label.
 
 ### jwz()
 
