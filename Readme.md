@@ -180,9 +180,8 @@ ggplot(midwest, aes(x=area, y=poptotal)) +
        title="New Retro Theme", 
        caption = "Source: midwest") + 
         new_retro() + 
-        scale_colour_newRetro()
-#> Warning: Removed 15 rows containing non-finite values (stat_smooth).
-#> Warning: Removed 15 rows containing missing values (geom_point).
+        scale_colour_newRetro() +
+        guides(size = guide_legend(override.aes = list(colour = "#FA5F70FF")))
 ```
 
 ![](Readme_files/figure-gfm/newRetro_01-1.png)<!-- -->
