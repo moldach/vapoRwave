@@ -142,7 +142,8 @@ ggplot(midwest, aes(x=area, y=poptotal)) +
        title="New Retro Theme", 
        caption = "Source: midwest") + 
         new_retro() + 
-        scale_colour_newRetro()
+        scale_colour_newRetro() +
+        guides(size = guide_legend(override.aes = list(colour = "#FA5F70FF")))
 
 ```
 
