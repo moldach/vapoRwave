@@ -184,7 +184,6 @@ ggplot(midwest, aes(x=area, y=poptotal)) +
         guides(size = guide_legend(override.aes = list(colour = "#FA5F70FF")))
 ```
 
-#![](Readme_files/figure-gfm/newRetro_01-1.png)<!-- -->
 ![](replacment03.png)<!-- -->
 
 ### JWZ Style
