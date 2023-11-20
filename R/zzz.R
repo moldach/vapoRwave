@@ -25,16 +25,18 @@ install_vapoRwave_fonts <- function() {
     # Ask for user's permission
     message("The vapoRwave package needs to install some fonts to your system font directory in order to work correctly.")
     message("This operation requires administrative privileges.")
-    if (tolower(readline("Do you want to proceed? [y/n]: ")) != "y") {
-      stop("Font installation cancelled by the user.")
-    }
+    proceed <- tolower(readline("Do you want to proceed? [y/n]: "))
     
-    # Copy files with sudo
-    for (file in font_files) {
-      system(paste("sudo cp", file, font_dir))
+    if (proceed == "y") {
+      # Copy files with sudo
+      for (file in font_files) {
+        system(paste("sudo cp", file, font_dir))
+      }
+      
+      # Import fonts into R
+      extrafont::font_import(paths = font_dir, prompt = FALSE)
+    } else {
+      message("Font installation cancelled by the user.")
     }
-    
-    # Import fonts into R
-    extrafont::font_import(paths = font_dir, prompt = FALSE)
   }
 }
