@@ -1,7 +1,9 @@
 ^LICENSE\.md$
-^LICENSE
 ^vapoRwave\.Rproj$
 ^\.Rproj\.user$
 ^Readme.md$
 ^Readme.Rmd$
 ^.travis.yml$
+^CONTRIBUTING\.md$
+^Readme_files$
+^figure-gfm$

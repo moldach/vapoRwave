@@ -3,7 +3,6 @@
 \docType{package}
 \name{vapoRwave}
 \alias{vapoRwave}
-\alias{vapoRwave-package}
 \title{vapoRwave: Add a vaporwave theme to ggplot2}
 \description{
 Giving a bit of 80's flair to ggplot2

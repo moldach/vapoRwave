@@ -4,14 +4,24 @@
 \alias{floral_shoppe}
 \title{Floral Shoppe Theme}
 \usage{
-floral_shoppe(font = "VCR OSD Mono", main.text.color = "#6CFFB9",
-  sub.text.color = "#6CFFB9", base.size = 15,
-  plot.background.color = "#FF819C", legend.position = "right",
-  panel.border.color = "black", panel.background = "black",
-  panel.grid.color = "#6CFFB9", axis.text.color = "#6CFFB9",
-  axis.text.size = base.size * 0.6666667, subtitle.size = base.size *
-  0.8, legend.text = base.size * 0.8, legend.title = base.size * 0.93,
-  axis.title.size = base.size * 0.8, title.size = 15)
+floral_shoppe(
+  font = "VCR OSD Mono",
+  main.text.color = "#6CFFB9",
+  sub.text.color = "#6CFFB9",
+  base.size = 15,
+  plot.background.color = "#FF819C",
+  legend.position = "right",
+  panel.border.color = "black",
+  panel.background = "black",
+  panel.grid.color = "#6CFFB9",
+  axis.text.color = "#6CFFB9",
+  axis.text.size = base.size * 0.6666667,
+  subtitle.size = base.size * 0.8,
+  legend.text = base.size * 0.8,
+  legend.title = base.size * 0.93,
+  axis.title.size = base.size * 0.8,
+  title.size = 15
+)
 }
 \arguments{
 \item{font}{Base text family}

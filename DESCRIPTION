@@ -1,6 +1,6 @@
 Package: vapoRwave
 Title: Vaporwave themes and color palettes for ggplot2 graphics
-Version: 0.0.0.9000
+Version: 0.0.0.9100
 Authors@R: c(
     person(given = "Matthew", family = "Oldach", role = c("aut", "cre"), email = "moldach686@gmail.com"),
     person("新しい日の誕生 ", comment = "Alien Encounters Typeface", role = c("cph")),
@@ -14,20 +14,18 @@ Description: Giving a bit of 80's flair to ggplot2.
 Imports:
         ggplot2,
         scales,
-        knitr
+        knitr,
+        gapminder,
+        forecast,
+        ggcorrplot,
+        WVPlots,
+        extrafont
 Suggests: 
-    WVPlots,
-    tidyverse,
-    extrafont,
-    forecast,
-    gapminder,
-    ggcorrplot,
-    testthat,
-    covr
+        tidyverse
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/moldach/vapoRwave
 BugReports: https://github.com/moldach/vapoRwave/issues
-RoxygenNote: 6.1.1
+RoxygenNote: 7.2.3
 VignetteBuilder: knitr
