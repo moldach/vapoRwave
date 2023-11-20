@@ -4,14 +4,24 @@
 \alias{jwz}
 \title{jwz Theme}
 \usage{
-jwz(font = "Windows Command Prompt", main.text.color = "#02BAFF",
-  sub.text.color = "#00FF01", base.size = 15,
-  plot.background.color = "black", legend.position = "right",
-  panel.border.color = "black", panel.background = "#014400",
-  panel.grid.color = "#00FF01", axis.text.color = "#02BAFF",
-  axis.text.size = base.size * 0.6666667, subtitle.size = base.size *
-  0.8, legend.text = base.size * 0.8, legend.title = base.size * 0.93,
-  axis.title.size = base.size * 0.8, title.size = 15)
+jwz(
+  font = "Windows Command Prompt",
+  main.text.color = "#02BAFF",
+  sub.text.color = "#00FF01",
+  base.size = 15,
+  plot.background.color = "black",
+  legend.position = "right",
+  panel.border.color = "black",
+  panel.background = "#014400",
+  panel.grid.color = "#00FF01",
+  axis.text.color = "#02BAFF",
+  axis.text.size = base.size * 0.6666667,
+  subtitle.size = base.size * 0.8,
+  legend.text = base.size * 0.8,
+  legend.title = base.size * 0.93,
+  axis.title.size = base.size * 0.8,
+  title.size = 15
+)
 }
 \arguments{
 \item{font}{Base text family}
