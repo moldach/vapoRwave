@@ -46,7 +46,8 @@ devtools::install_github("moldach/vapoRwave")
 devtools::install_github("moldach/vapoRwave", build_vignettes=TRUE)
 ```
 
-## Quickstart 
+Load packages:
+
 
 ```r
 library(vapoRwave)
