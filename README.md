@@ -12,33 +12,37 @@ output:
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/moldach/vapoRwave/blob/master/LICENSE.md)
 
-**Contact:**
-- [Twitter](https://twitter.com/moldach)
-- [GitHub](https://github.com/moldach)
-- [Personal Website](https://moldach.github.io/)
+**Contact:** - [Twitter](https://twitter.com/moldach) -
+[GitHub](https://github.com/moldach) - [Personal
+Website](https://moldach.github.io/)
 
 ## Table of Contents
-- [Overview](#overview)
-- [Installation](#installation)
-- [Themes](#themes)
-  - [Floral Shoppe](#floral-shoppe)
-  - [New Retro Wave](#new-retro-wave)
-  - [jwz](#jwz)
-- [Vignette](#vignette)
-- [Contributing](#contributing)
-- [License](#license)
+
+  - [Overview](#overview)
+  - [Installation](#installation)
+  - [Themes](#themes)
+      - [Floral Shoppe](#floral-shoppe)
+      - [New Retro Wave](#new-retro-wave)
+      - [jwz](#jwz)
+  - [Vignette](#vignette)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## Overview
 
-`vapoRwave` is an R package that provides `ggplot2` themes inspired by the vaporwave movement, a genre of electronic music and art characterized by nostalgic and satirical takes on consumer capitalism, glitch art, anime, 3D-rendered objects, and cyberpunk tropes.
+`vapoRwave` is an R package that provides `ggplot2` themes inspired by
+the vaporwave movement, a genre of electronic music and art
+characterized by nostalgic and satirical takes on consumer capitalism,
+glitch art, anime, 3D-rendered objects, and cyberpunk tropes.
 
-Explore the aesthetics of vaporwave through themes that mimic iconic album covers and visual styles.
+Explore the aesthetics of vaporwave through themes that mimic iconic
+album covers and visual styles.
 
 ## Installation
 
 Use the `devtools` package to install it.
 
-```r
+``` r
 devtools::install_github("moldach/vapoRwave")
 
 # To include the vignette
@@ -47,19 +51,18 @@ devtools::install_github("moldach/vapoRwave", build_vignettes=TRUE)
 
 Load packages:
 
-
-```r
+``` r
 library(vapoRwave)
 library(ggplot2)
 ```
 
 ## Themes
 
-### Floral Shoppe 
+### Floral Shoppe
 
 ![](vignettes/figure-gfm/FloralShoppe.png)
 
-```r
+``` r
 ggplot(mpg, aes(displ)) + 
         geom_histogram(aes(fill=class), 
                    binwidth = .1, 
@@ -71,11 +74,11 @@ ggplot(mpg, aes(displ)) +
 
 ![](vignettes/figure-gfm/floralShoppe_01-1.png)
 
-### New Retro Wave 
+### New Retro Wave
 
 ![](vignettes/figure-gfm/new_retro.jpg)
 
-```r
+``` r
 options(scipen=999)  # turn-off scientific notation like 1e+48
 data("midwest", package = "ggplot2")
 ggplot(midwest, aes(x=area, y=poptotal)) + 
@@ -99,7 +102,7 @@ ggplot(midwest, aes(x=area, y=poptotal)) +
 
 ![](vignettes/figure-gfm/jwz.jpg)
 
-```r
+``` r
 ggplot(mpg, es(class, cty)) +
         geom_boxplot(aes(fill=factor(cyl))) + 
         theme(axis.text.x = element_text(angle=65, vjust=0.6)) + 
@@ -116,7 +119,12 @@ ggplot(mpg, es(class, cty)) +
 
 ## Vignette
 
-For more advanced and complex use-cases, as well as detailed examples and customization options, refer to the [vapoRwave vignette](doc/vapoRwave.html). The vignette explore diverse demos that include information on various palletes, fonts, changing parameters, and integrating with extensions. For a comprehensive guide, consult the vignette for the full potential of the `vapoRwave` package.
+For more advanced and complex use-cases, as well as detailed examples
+and customization options, refer to the [vapoRwave
+vignette](doc/vapoRwave.html). The vignette explore diverse demos that
+include information on various palletes, fonts, changing parameters, and
+integrating with extensions. For a comprehensive guide, consult the
+vignette for the full potential of the `vapoRwave` package.
 
 ## Contributing
 
@@ -125,4 +133,5 @@ of conduct, and the process for submitting pull requests to us.
 
 ## License
 
-This code is released under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This code is released under the MIT License - see the
+[LICENSE.md](LICENSE.md) file for details.
