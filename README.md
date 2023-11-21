@@ -1,12 +1,3 @@
----
-title: "vapoRwave"
-author: "Matthew Jordan Oldach"
-output: 
-  md_document:
-    variant: gfm
-    preserve_yaml: true
----
-
 # VapoRwave Themes
 
 [![License:
@@ -125,6 +116,14 @@ vignette](doc/vapoRwave.html). The vignette explore diverse demos that
 include information on various palletes, fonts, changing parameters, and
 integrating with extensions. For a comprehensive guide, consult the
 vignette for the full potential of the `vapoRwave` package.
+
+When users install tha package and want to access the vignettes, they
+can use the following command to open them:
+
+``` r
+library(vapoRwave)
+browseVignettes("vapoRwave")
+```
 
 ## Contributing
 
