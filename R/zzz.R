@@ -3,40 +3,36 @@
 }
 
 install_vapoRwave_fonts <- function() {
-  # Get the operating system
-  os_type <- Sys.info()["sysname"]
-  
-  # Determine the system font directory
-  if (os_type == "Windows") {
-    font_dir <- normalizePath("~/Windows/Fonts")
-  } else if (os_type == "Darwin") { # macOS
-    font_dir <- normalizePath("~/Library/Fonts")
-  } else if (os_type == "Linux") {
-    font_dir <- normalizePath("/usr/local/share/fonts")
-  } else {
-    stop("Unsupported operating system.")
-  }
-  
-  # Copy .ttf files from the package to the system font directory
-  package_font_dir <- system.file("./inst/fonts", package = "vapoRwave")
+  # Get the user's home directory
+  user_home <- Sys.getenv("HOME")
+
+  # Determine the user's font directory
+  font_dir <- file.path(user_home, ".fonts")
+
+  # Copy .ttf files from the package to the user's font directory
+  package_font_dir <- system.file("fonts", package = "vapoRwave", mustWork = TRUE)
   font_files <- list.files(package_font_dir, pattern = "\\.ttf$", full.names = TRUE)
-  
+
   if (length(font_files) > 0) {
-    # Ask for user's permission
-    message("The vapoRwave package needs to install some fonts to your system font directory in order to work correctly.")
-    message("This operation requires administrative privileges.")
-    proceed <- tolower(readline("Do you want to proceed? [y/n]: "))
-    
-    if (proceed == "y") {
-      # Copy files with sudo
-      for (file in font_files) {
-        system(paste("sudo cp", file, font_dir))
-      }
-      
-      # Import fonts into R
-      extrafont::font_import(paths = font_dir, prompt = FALSE)
-    } else {
-      message("Font installation cancelled by the user.")
+    # Create the destination directory if it doesn't exist
+    if (!dir.exists(font_dir)) {
+      dir.create(font_dir, recursive = TRUE)
     }
+
+    # Copy files to the destination directory
+    file.copy(from = font_files, to = font_dir, recursive = TRUE, overwrite = TRUE)
+
+    # Import fonts into R
+    extrafont::font_import(paths = font_dir, prompt = FALSE)
+
+    # Check if fonts are imported successfully
+    imported_fonts <- extrafont::fonts()
+    if (length(imported_fonts) > 0) {
+      message("Fonts imported successfully.")
+    } else {
+      message("No fonts imported. Please check if the fonts are in the correct format.")
+    }
+  } else {
+    message("No fonts found in the vapoRwave package.")
   }
 }
