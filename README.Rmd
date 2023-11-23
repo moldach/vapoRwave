@@ -58,7 +58,7 @@ library(extrafont)
 
 While Ubuntu users can effortlessly install fonts, Windows users are required to take an additional step to utilize the fonts provided.
 
-The fonts from the vapoRwave package will be locally installed in C:\Windows\Users\<username>\MyFonts\. To use them, move/copy the fonts to Control Panel -> Appearance and Personalization -> Fonts.
+The fonts from the vapoRwave package will be locally installed in `C:\Windows\Users\<username>\MyFonts\`. To use them, move/copy the fonts to **Control Panel -> Appearance and Personalization -> Fonts**.
 
 ![](vignettes/figure-gfm/load-windows-fonts-00.png)
 ![](vignettes/figure-gfm/load-windows-fonts-01.png)
