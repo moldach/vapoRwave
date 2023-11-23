@@ -1,6 +1,6 @@
 Package: vapoRwave
 Title: Vaporwave themes and color palettes for ggplot2 graphics
-Version: 0.0.0.9100
+Version: 0.1.0
 Authors@R: c(
     person(given = "Matthew", family = "Oldach", role = c("aut", "cre"), email = "moldach686@gmail.com"),
     person("新しい日の誕生 ", comment = "Alien Encounters Typeface", role = c("cph")),
