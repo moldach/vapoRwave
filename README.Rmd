@@ -20,11 +20,12 @@ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/mo
 ## Table of Contents
 - [Overview](#overview)
 - [Installation](#installation)
+  - [Windows Font Installation](#windows-font-installation)
 - [Themes](#themes)
   - [Floral Shoppe](#floral-shoppe)
   - [New Retro Wave](#new-retro-wave)
   - [jwz](#jwz)
-- [Vignette](#vignette)
+- [Vignettes](#vignettes)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -47,12 +48,32 @@ devtools::install_github("moldach/vapoRwave", build_vignettes=TRUE)
 
 Load packages:
 
-
 ```r
 library(vapoRwave)
 library(ggplot2)
 library(extrafont)
 ```
+
+### Windows Font Installation
+
+While Ubuntu users can effortlessly install fonts, Windows users are required to take an additional step to utilize the fonts provided.
+
+The fonts from the vapoRwave package will be locally installed in C:\Windows\Users\<username>\MyFonts\. To use them, move/copy the fonts to Control Panel -> Appearance and Personalization -> Fonts.
+
+![](vignettes/figure-gfm/load-windows-fonts-00.png)
+![](vignettes/figure-gfm/load-windows-fonts-01.png)
+
+**After each new R session, execute the following commands to make the fonts available:**
+
+```r
+library(extrafont)
+# Import the TrueType fonts
+font_import(paths = "C:/Windows/Fonts/", recursive = TRUE)
+```
+
+Select `Y` to continue:
+
+![](vignettes/figure-gfm/load-windows-fonts-02.png)
 
 ## Themes
 
@@ -126,44 +147,6 @@ When users install tha package and want to access the vignettes, they can use th
 library(vapoRwave)
 browseVignettes("vapoRwave")
 ```
-
-## WINDOWS USERS!
-
-For ubuntu users the fonts should be installed effortlessly; however, Windows users need to follow an additional step to use the provided fonts.
-
-The fonts from the `vapoRwave` package will be insalled locally in `C:\Windows\Users\<username>\MyFonts\` and must be moved/copied to **Control Panel -> Appearance and Personalization -> Fonts**
-
-![](vignettes/figure-gfm/load-windows-fonts-00.png)
-![](vignettes/figure-gfm/load-windows-fonts-01.png)
-
-**Each time you launch a new R session you need to run the following commands to make the fonts available**
-
-```r
-library(extrafont)
-# Import the TrueType fonts
-font_import(paths = "C:/Windows/Fonts/", recursive = TRUE)
-```
-
-Select `Y` to continue:
-
-![](vignettes/figure-gfm/load-windows-fonts-02.png)
-
-Now all the fonts are availabe:
-
-```r
-library(vapoRwave)
-library(ggplot2)
-ggplot(mpg, aes(displ)) + 
-        geom_histogram(aes(fill=class), 
-                   binwidth = .1, 
-                   col="black", 
-                   size=.1) +  # change binwidth
-        labs(title="Floral Shoppe", 
-        subtitle="Engine Displacement across Vehicle Classes") + floral_shoppe() + scale_fill_floralShoppe()
-```
-
-![](vignettes/figure-gfm/floralShoppe_01-1.png)
-
 
 ## Contributing
 

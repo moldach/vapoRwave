@@ -3,7 +3,7 @@
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/moldach/vapoRwave/blob/master/LICENSE.md)
 
-**Contact:** - [Twaesitter](https://twitter.com/moldach) -
+**Contact:** - [Twitter](https://twitter.com/moldach) -
 [GitHub](https://github.com/moldach) - [Personal
 Website](https://moldach.github.io/)
 
@@ -11,11 +11,12 @@ Website](https://moldach.github.io/)
 
   - [Overview](#overview)
   - [Installation](#installation)
+      - [Windows Font Installation](#windows-font-installation)
   - [Themes](#themes)
       - [Floral Shoppe](#floral-shoppe)
       - [New Retro Wave](#new-retro-wave)
       - [jwz](#jwz)
-  - [Vignette](#vignette)
+  - [Vignettes](#vignettes)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -45,7 +46,33 @@ Load packages:
 ``` r
 library(vapoRwave)
 library(ggplot2)
+library(extrafont)
 ```
+
+### Windows Font Installation
+
+While Ubuntu users can effortlessly install fonts, Windows users are
+required to take an additional step to utilize the fonts provided.
+
+The fonts from the vapoRwave package will be locally installed in
+C:\<username\>. To use them, move/copy the fonts to Control Panel -\>
+Appearance and Personalization -\> Fonts.
+
+![](vignettes/figure-gfm/load-windows-fonts-00.png)
+![](vignettes/figure-gfm/load-windows-fonts-01.png)
+
+**After each new R session, execute the following commands to make the
+fonts available:**
+
+``` r
+library(extrafont)
+# Import the TrueType fonts
+font_import(paths = "C:/Windows/Fonts/", recursive = TRUE)
+```
+
+Select `Y` to continue:
+
+![](vignettes/figure-gfm/load-windows-fonts-02.png)
 
 ## Themes
 
@@ -108,7 +135,7 @@ ggplot(mpg, aes(class, cty)) +
 
 ![](vignettes/figure-gfm/jwz_01-1.png)
 
-## Vignette
+## Vignettes
 
 For more advanced and complex use-cases, as well as detailed examples
 and customization options, refer to the [vapoRwave
