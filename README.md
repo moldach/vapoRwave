@@ -3,7 +3,7 @@
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/moldach/vapoRwave/blob/master/LICENSE.md)
 
-**Contact:** - [Twitter](https://twitter.com/moldach) -
+**Contact:** - [Twaesitter](https://twitter.com/moldach) -
 [GitHub](https://github.com/moldach) - [Personal
 Website](https://moldach.github.io/)
 
@@ -94,7 +94,7 @@ ggplot(midwest, aes(x=area, y=poptotal)) +
 ![](vignettes/figure-gfm/jwz.jpg)
 
 ``` r
-ggplot(mpg, es(class, cty)) +
+ggplot(mpg, aes(class, cty)) +
         geom_boxplot(aes(fill=factor(cyl))) + 
         theme(axis.text.x = element_text(angle=65, vjust=0.6)) + 
         labs(title="Box plot", 
