@@ -6,8 +6,13 @@ install_vapoRwave_fonts <- function() {
   # Get the user's home directory
   user_home <- Sys.getenv("HOME")
 
-  # Determine the user's font directory
-  font_dir <- file.path(user_home, ".fonts")
+  # Determine the user's font directory based on the operating system
+  font_dir <- switch(Sys.info()["sysname"],
+    Windows = file.path(Sys.getenv("USERPROFILE"), "MyFonts"),
+    Linux = file.path(user_home, ".fonts"),
+    Darwin = file.path(user_home, "Library", "Fonts"),
+    stop("Unsupported operating system")
+  )
 
   # Copy .ttf files from the package to the user's font directory
   package_font_dir <- system.file("fonts", package = "vapoRwave", mustWork = TRUE)
