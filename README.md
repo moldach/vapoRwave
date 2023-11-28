@@ -144,13 +144,35 @@ include information on various palletes, fonts, changing parameters, and
 integrating with extensions. For a comprehensive guide, consult the
 vignette for the full potential of the `vapoRwave` package.
 
-When users install tha package and want to access the vignettes, they
+When users install the package and want to access the vignettes, they
 can use the following command to open them:
 
 ``` r
 library(vapoRwave)
 browseVignettes("vapoRwave")
 ```
+
+### Docker
+
+Welcome to vapoRwave v1.1, the ultimate synthesis of nostalgia and
+cutting-edge data visualization self-contained within a New Retro IDE
+[Synthwave85](https://github.com/jnolis/synthwave85) IDE.
+
+With this latest update, the installation process is simplified,
+ensuring seamless compatibility across all operating systems. Embrace
+the future with a New Retro theme in your IDE, featuring a pre-loaded
+Python environment through the reticulate package. Now, Python
+enthusiasts can seamlessly code in a rad retro style while harnessing
+the intuitive syntax and potent graphics system of R.
+
+``` bash
+docker build -t vaporwave .
+docker run -p 8787:8787 -e PASSWORD=vaporwave vaporwave
+```
+
+You can install `R` packages in the *console* as well as Python packages
+(using `pip3`) to a Poetry virtual environment along with any system
+dependencies you require (using `apt-get`).
 
 ## Contributing
 
