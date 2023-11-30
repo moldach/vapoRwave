@@ -61,3 +61,89 @@ available at [http://contributor-covenant.org/version/1/4][version]
 
 [homepage]: http://contributor-covenant.org
 [version]: http://contributor-covenant.org/version/1/4/
+
+### Building and Testing the R Package
+
+Before submitting your contribution, please make sure to build and test the package using the following steps:
+
+- Render the README:
+
+```r
+rmarkdown::render("README.Rmd")
+```
+
+- Build Vignettes:
+
+```r
+devtools::build_vignettes()
+```
+
+- Document the Package:
+
+```r
+devtools::document()
+```
+
+- Check the Package:
+
+This step ensures that everything is in order, checking for common potential problems.
+
+```r
+devtools::check()
+```
+
+- Build the Package:
+
+This step compiles your package into a tarball, ready for testing or distribution.
+
+```r
+devtools::build()
+```
+
+- Install the Package:
+
+Finally, install the package locally to test it.
+
+```r
+devtools::install()
+```
+
+### Updating the Docker Container
+
+Specifically for Matthew until this is automated with CI.
+
+
+
+- Log in to Docker
+
+```bash
+docker login
+```
+
+- Build the Docker Image (if not yet built)
+
+```bash
+docker build -t vaporwave .
+```
+
+- Tag Your Docker Image
+
+Replace x.y.z with the appropriate version number for your new image
+
+```bash
+docker tag vaporwave moldach686/vaporwave:x.y.z
+```
+
+- Push the Image to Docker Hub
+
+```bash
+docker push moldach686/vaporwave:x.y.z
+```
+
+Make sure to replace `x.y.z`` with the actual version tag you used in the previous step
+
+Please ensure you have tested the Docker container locally before pushing to Docker Hub. This helps us maintain the quality and reliability of the Docker images available to users.
+
+> Note: Always remember to increment the version tag appropriately following semantic versioning guidelines. This avoids overwriting existing versions and helps users understand the level of changes introduced.
+
+We appreciate your contributions to the vapoRwave project and look forward to your innovative enhancements! 🚀🌟

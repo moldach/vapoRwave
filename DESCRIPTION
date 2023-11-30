@@ -1,6 +1,6 @@
 Package: vapoRwave
 Title: Vaporwave themes and color palettes for ggplot2 graphics
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
     person(given = "Matthew", family = "Oldach", role = c("aut", "cre"), email = "moldach686@gmail.com"),
     person("新しい日の誕生 ", comment = "Alien Encounters Typeface", role = c("cph")),
@@ -8,7 +8,8 @@ Authors@R: c(
     person("Riciery Leal", comment = "VCR OSD Mono Typeface", role = c("cph")),
     person("McFood", comment = "Windows Command Prompt Typeface", role = c("cph")),
     person("Phil Steinschneider", comment = "Bladerunner Typeface", role = c("cph")),
-    person("Fontalicious", comment = "Pac-Font Typeface", role = c("cph"))
+    person("Fontalicious", comment = "Pac-Font Typeface", role = c("cph")),
+    person("Jacqueline Nolis", comment = "Synthwave85 RStudio Theme", role = c("cph"))
     )       
 Description: Giving a bit of 80's flair to ggplot2.
 Imports:
