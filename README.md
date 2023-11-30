@@ -17,6 +17,7 @@ Website](https://moldach.github.io/)
       - [New Retro Wave](#new-retro-wave)
       - [jwz](#jwz)
   - [Vignettes](#vignettes)
+      - [Docker](#docker)
   - [Contributing](#contributing)
   - [License](#license)
 
@@ -170,9 +171,16 @@ docker build -t vaporwave .
 docker run -p 8787:8787 -e PASSWORD=vaporwave vaporwave
 ```
 
+![](vignettes/figure-gfm/docker-and-r-demo.gif)
+
+For example, you can use Pandas to read and manipulate data then easily
+plot the Pandas data frame using ggplot2:
+
 You can install `R` packages in the *console* as well as Python packages
 (using `pip3`) to a Poetry virtual environment along with any system
 dependencies you require (using `apt-get`).
+
+![](vignettes/figure-gfm/installs-clip.gif)
 
 ## Contributing
 
