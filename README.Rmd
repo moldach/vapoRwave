@@ -151,22 +151,45 @@ browseVignettes("vapoRwave")
 
 ### Docker
 
-Welcome to vapoRwave v1.1, the ultimate synthesis of nostalgia and cutting-edge data visualization self-contained within a New Retro IDE [Synthwave85](https://github.com/jnolis/synthwave85) IDE.
+Dive into the world of vapoRwave v0.2.0 and experience the perfect blend of retro aesthetics and modern data visualization within the [Synthwave85](https://github.com/jnolis/synthwave85) RStudio IDE, now more accessible than ever!
 
-With this latest update, the installation process is simplified, ensuring seamless compatibility across all operating systems. Embrace the future with a New Retro theme in your IDE, featuring a pre-loaded Python environment through the reticulate package. Now, Python enthusiasts can seamlessly code in a rad retro style while harnessing the intuitive syntax and potent graphics system of R.
+The v0.2.0 release streamlines the installation process across various operating systems. Get the New Retro theme in your IDE coupled with a pre-configured Python environment via the reticulate package. Python aficionados can now indulge in retro-flavored coding while leveraging R's simple syntax and powerful graphics.
+
+[![Python and R in a Retro IDE](https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2Fjtug43o_3Sw)](https://youtu.be/jtug43o_3Sw)
+
+For your convenience, we offer two ways to get vapoRwave running in a Docker container:
+
+#### Pull the Pre-Built Docker Image
+
+The easiest way to get started is to pull the  pre-built image from Docker Hub, which was optimized for size and security using [Slim](https://github.com/slimtoolkit/slim):
+
+```bash
+docker pull moldach686/vaporwave:latest
+docker run -p 8787:8787 -e PASSWORD=vaporwave moldach686/vaporwave
+```
+
+#### Build from the Dockerfile
+
+Alternatively, if you prefer to build the Docker image yourself from the Dockerfile:
 
 ```bash
 docker build -t vaporwave .
 docker run -p 8787:8787 -e PASSWORD=vaporwave vaporwave
 ```
 
+Either of these options will start vapoRwave and you can access the IDE by navigating to `http://localhost:8787`` in your web browser. Log in with the username `rstudio` and the password `vaporwave`.
+
 ![](vignettes/figure-gfm/docker-and-r-demo.gif)
 
-For example, you can use Pandas to read and manipulate data then easily plot the Pandas data frame using ggplot2:
+For instance, you can leverage Pandas for data wrangling and then visualize your results with R's ggplot2, all within this unique environment.
 
-You can install `R` packages in the _console_ as well as Python packages (using `pip3`) to a Poetry virtual environment along with any system dependencies you require (using `apt-get`).
+Once inside the IDE, feel free to install additional R packages through the _console_. Alternatively, in the _terminal_ you can install Python packages using `pip3` within a Poetry virtual environment, and any system dependencies using `apt-get`.
 
 ![](vignettes/figure-gfm/installs-clip.gif)
+
+Please note that when building from the Dockerfile, you may pull the latest dependencies, which provides the most up-to-date environment, while using the pre-built image ensures a consistent, tested setup.
+
+Enjoy the blend of the past and present in data science with vapoRwave v0.2.0 **Retro Player One**!🕹️📼🎵
 
 ## Contributing
 
