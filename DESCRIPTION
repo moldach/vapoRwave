@@ -1,6 +1,6 @@
 Package: vapoRwave
 Title: Vaporwave themes and color palettes for ggplot2 graphics
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: c(
     person(given = "Matthew", family = "Oldach", role = c("aut", "cre"), email = "moldach686@gmail.com"),
     person("新しい日の誕生 ", comment = "Alien Encounters Typeface", role = c("cph")),
@@ -15,14 +15,14 @@ Description: Giving a bit of 80's flair to ggplot2.
 Imports:
         ggplot2,
         scales,
+        extrafont
+Suggests: 
+        tidyverse,
         knitr,
         gapminder,
         forecast,
         ggcorrplot,
-        WVPlots,
-        extrafont
-Suggests: 
-        tidyverse
+        WVPlots
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
