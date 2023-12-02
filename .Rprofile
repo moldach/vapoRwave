@@ -1,1 +1,0 @@
-.First <- function() { library(rstudioapi); library(later); later::later(function() { addTheme("~/.R/themes/Synthwave85.rstheme", apply = TRUE) }, delay = 1) }
