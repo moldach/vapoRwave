@@ -7,7 +7,7 @@ RUN apt-get update && \
         make g++ gfortran libxml2-dev libcurl4-openssl-dev \
         libfontconfig1-dev libfreetype6-dev libfribidi-dev libharfbuzz-dev \
         libjpeg-dev libpng-dev libtiff-dev libxt6 \
-        python3 python3-pip vim nano
+        python3 python3-pip vim nano 
 
 # Install Poetry
 RUN wget -qO- https://install.python-poetry.org | python3 -
@@ -40,7 +40,7 @@ RUN /app/.venv/bin/pip3 install pandas numpy scikit-learn
 RUN R -e "install.packages(c('remotes', 'ggplot2', 'reticulate', 'rstudioapi', 'later'), dependencies=TRUE)"
 
 # Install R packages from GitHub
-RUN R -e "remotes::install_github('moldach/vapoRwave', build_vignettes=TRUE, dependencies=TRUE)"
+RUN R -e "remotes::install_github('moldach/vapoRwave', build_vignettes=FALSE, dependencies=NA)"
 
 # Install Python virtual environment tools
 RUN apt-get install -y python3-venv
@@ -48,11 +48,8 @@ RUN apt-get install -y python3-venv
 # Add the user to the sudo group and set a password
 RUN usermod -aG sudo rstudio && echo "rstudio:vaporwave" | chpasswd
 
-# Change RStudio theme
-#COPY rstudio-prefs.json /home/rstudio/.config/rstudio/rstudio-prefs.json
 # Download RStudio theme
 RUN mkdir -p /home/rstudio/.R/themes && wget -O /home/rstudio/.R/themes/Synthwave85.rstheme https://raw.githubusercontent.com/jnolis/synthwave85/master/Synthwave85.rstheme
-# Set the theme in RStudio preferences
 # Set the theme in RStudio preferences
 RUN echo '.First <- function() { library(rstudioapi); library(later); later::later(function() { addTheme("~/.R/themes/Synthwave85.rstheme", apply = TRUE) }, delay = 1) }' > /home/rstudio/.Rprofile
 
@@ -64,4 +61,3 @@ ENV PASSWORD vaporwave
 
 # Start RStudio Server when the container launches
 CMD ["/bin/bash", "-c", "source /app/.venv/bin/activate && /init"]
-
