@@ -1,48 +1,48 @@
 mallSoft_palette <- c(
-        "#7FD4C1"
-        ,"#30BFDD"
-        ,"#8690FF"
-        ,"#ACD0F4"
-        ,"#F7C0BB"
-        ,"#FBCFF3"
+  "#7FD4C1",
+  "#30BFDD",
+  "#8690FF",
+  "#ACD0F4",
+  "#F7C0BB",
+  "#FBCFF3"
 )
 
-
-#' Mallsoft Colour and Fill Scales
+#' Mallsoft Colour Palette
 #'
-#' Colour scales based on the Mallsoft vaporwave genre
 #' @description
-#' Mallsoft takes classic vaporwave’s interest in consumeristic detachment
-#' and uses it as the thematic basis for spacious ambient music
-#' in the imagined space of the suburban shopping mall
-#'
-#' @references https://indie88.com/mallsoft/
-#' @seealso [ggplot2::scale_colour_discrete] [ggplot2:scale_fill_discrete]
-#' @inheritDotParams ggplot2::discrete_scale
-#' @name mallSoft_pal
-#'
-#' @return the Mallsoft palette
+#' Colour scales inspired by the Mallsoft subgenre of vaporwave music.
+#' Mallsoft emphasizes the sense of consumeristic detachment in the ambience of a suburban shopping mall.
+#' @return A character vector of color hex codes representing the Mallsoft palette.
+#' @importFrom scales manual_pal
 #' @export
-#'
-NULL
-
-mallSoft_pal <- function(){
-        scales::manual_pal(mallSoft_palette)
+mallSoft_pal <- function() {
+  scales::manual_pal(mallSoft_palette)
 }
 
-#' @rdname mallSoft_pal
+#' Mallsoft Colour and Fill Scales for ggplot2
+#'
+#' @param ... Additional arguments passed to \code{\link[ggplot2:discrete_scale]{discrete_scale}}
+#' @seealso \code{\link[ggplot2:scale_colour_discrete]{scale_colour_discrete()}} and 
+#'   \code{\link[ggplot2:scale_fill_discrete]{scale_fill_discrete()}}
+#' @importFrom scales manual_pal
+#' @importFrom ggplot2 discrete_scale
 #' @export
 scale_colour_mallSoft <- function(...) {
-        ggplot2::discrete_scale("colour", "mallSoft", mallSoft_pal(), ...)
+  ggplot2::discrete_scale("colour", "mallSoft", mallSoft_pal(), ...)
 }
 
-#' @rdname mallSoft_pal
+#' Scale Color Mallsoft - Alias for Colour
+#'
+#' @seealso \code{\link{scale_colour_mallSoft}}
+#' @rdname scale_colour_mallSoft
 #' @export
 scale_color_mallSoft <- scale_colour_mallSoft
 
-
-#' @rdname mallSoft_pal
+#' Mallsoft Fill Scales for ggplot2
+#'
+#' @inheritParams scale_colour_mallSoft
+#' @seealso \code{\link{scale_colour_mallSoft}}
 #' @export
 scale_fill_mallSoft <- function(...) {
-        ggplot2::discrete_scale('fill', 'mallSoft', mallSoft_pal(), ...)
+  ggplot2::discrete_scale('fill', 'mallSoft', mallSoft_pal(), ...)
 }

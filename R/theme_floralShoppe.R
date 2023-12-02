@@ -21,7 +21,7 @@
 #' @param legend.title Size of legend title
 #' @param axis.title.size Size of axis title
 #' @param title.size Size of title
-#'
+#' @importFrom ggplot2 element_blank element_line element_rect element_text margin theme_minimal
 #'
 #' @export
 floral_shoppe <- function(
