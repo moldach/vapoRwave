@@ -7,7 +7,7 @@ RUN apt-get update && \
         make g++ gfortran libxml2-dev libcurl4-openssl-dev \
         libfontconfig1-dev libfreetype6-dev libfribidi-dev libharfbuzz-dev \
         libjpeg-dev libpng-dev libtiff-dev libxt6 \
-        python3 python3-pip vim nano 
+        python3 python3-pip 
 
 # Install Poetry
 RUN wget -qO- https://install.python-poetry.org | python3 -
