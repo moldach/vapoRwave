@@ -9,8 +9,6 @@ Website](https://moldach.github.io/)
 
 ## Star History
 
-<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://star-history.com/embed?secret=c3NoLWVkMjU1MTkgQUFBQUMzTnphQzFsWkRJMU5URTVBQUFBSUdTeVdQWCtMSm43dVg5Tk5WSTIwQ3J4VXpiWm54U1pGYm5GRW1TYTFTOTMgbW9sZGFjaDY4NkBnbWFpbC5jb20=#moldach/vapoRwave&Date" frameBorder="0"></iframe>
-
 [![Star History Chart](https://api.star-history.com/svg?repos=moldach/vapoRwave&type=Date)](https://star-history.com/#moldach/vapoRwave&Date)
 
 ## Table of Contents
