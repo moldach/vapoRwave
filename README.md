@@ -7,6 +7,10 @@ MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/mo
 [GitHub](https://github.com/moldach) - [Personal
 Website](https://moldach.github.io/)
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=moldach/vapoRwave&type=Date)](https://star-history.com/#moldach/vapoRwave&Date)
+
 ## Table of Contents
 
   - [Overview](#overview)
